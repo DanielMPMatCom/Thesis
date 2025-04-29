@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{akmentins2011vocal}
+Mauricio~S Akmentins.
+\newblock Vocal repertoire of two species of oreobates jim{\'e}nez de la
+  espada, 1872 (anura: Strabomantidae) of the yungas andean forest, nw
+  argentina.
+\newblock {\em Journal of Natural History}, 45(29-30):1789--1799, 2011.
+
+\bibitem{akmentins2015patterns}
+Mauricio~Sebasti{\'a}n Akmentins, Laura~Cecilia Pereyra, Eduardo~Alfredo
+  Sanabria, and Marcos Vaira.
+\newblock Patterns of daily and seasonal calling activity of a
+  direct-developing frog of the subtropical andean forests of argentina.
+\newblock {\em Bioacoustics}, 24(2):89--99, 2015.
+
+\bibitem{alonso2001patrones}
+Roberto Alonso, Ariel Rodr{\'\i}guez-G{\'o}mez, and Alberto~R Estrada.
+\newblock Patrones de actividad ac{\'u}stica y tr{\'o}fica de machos cantores
+  de eleutherodactylus eileenae (anura: Leptodactylidae).
+\newblock {\em Revista espa{\~n}ola de herpetolog{\'\i}a}, 15(2001):45--52,
+  2001.
+
+\bibitem{blumstein2011acoustic}
+Daniel~T Blumstein, Daniel~J Mennill, Patrick Clemins, Lewis Girod, Kung Yao,
+  Gail Patricelli, Jill~L Deppe, Alan~H Krakauer, Christopher Clark, Kathryn~A
+  Cortopassi, et~al.
+\newblock Acoustic monitoring in terrestrial environments using microphone
+  arrays: applications, technological considerations and prospectus.
+\newblock {\em Journal of Applied Ecology}, 48(3):758--767, 2011.
+
+\bibitem{calsbeek2022individual}
+Ryan Calsbeek, Francisco~Javier Zamora-Camacho, and Laurel~B Symes.
+\newblock Individual contributions to group chorus dynamics influence access to
+  mating opportunities in wood frogs.
+\newblock {\em Ecology Letters}, 25(6):1401--1409, 2022.
+
+\bibitem{chau2017inverse}
+H~Chau~Nguyen, Riccardo Zecchina, and Johannes Berg.
+\newblock Inverse statistical problems: from the inverse ising problem to data
+  science.
+\newblock {\em Advances in Physics}, 66(3):197--261, 2017.
+
+\bibitem{costa2021comparing}
+Luciano da~F Costa.
+\newblock Comparing cross correlation-based similarities.
+\newblock {\em arXiv preprint arXiv:2111.08513}, 2021.
+
+\bibitem{farina2018ecoacoustics}
+Almo Farina.
+\newblock Ecoacoustics: A quantitative approach to investigate the ecological
+  role of environmental sounds.
+\newblock {\em Mathematics}, 7(1):21, 2018.
+
+\bibitem{gan2020data}
+Hongxiao Gan, Jinglan Zhang, Michael Towsey, Anthony Truskinger, Debra Stark,
+  Berndt~J van Rensburg, Yuefeng Li, and Paul Roe.
+\newblock Data selection in frog chorusing recognition with acoustic indices.
+\newblock {\em Ecological Informatics}, 60:101160, 2020.
+
+\bibitem{jurafskyspeech}
+Daniel Jurafsky and James~H Martin.
+\newblock Speech and language processing: An introduction to natural language
+  processing, computational linguistics, and speech recognition.
+
+\bibitem{sanchez2017methodology}
+Ignacio S{\'a}nchez-Gendriz and Linilson~Rodrigues Padovese.
+\newblock A methodology for analyzing biological choruses from long-term
+  passive acoustic monitoring in natural areas.
+\newblock {\em Ecological Informatics}, 41:1--10, 2017.
+
+\bibitem{xie2022frog}
+Jie Xie, Mingying Zhu, Kai Hu, Jinglan Zhang, Harry Hines, and Ya~Guo.
+\newblock Frog calling activity detection using lightweight cnn with multi-view
+  spectrogram: A case study on kroombit tinker frog.
+\newblock {\em Machine Learning with Applications}, 7:100202, 2022.
+
+\bibitem{zeng2013maximum}
+Hong-Li Zeng, Mikko Alava, Erik Aurell, John Hertz, and Yasser Roudi.
+\newblock Maximum likelihood reconstruction for ising models with asynchronous
+  updates.
+\newblock {\em Physical review letters}, 110(21):210601, 2013.
+
+\bibitem{zhang2021acoustic}
+Tao Zhang, Guoqing Feng, Jinhua Liang, and Tong An.
+\newblock Acoustic scene classification based on mel spectrogram decomposition
+  and model merging.
+\newblock {\em Applied Acoustics}, 182:108258, 2021.
+
+\end{thebibliography}

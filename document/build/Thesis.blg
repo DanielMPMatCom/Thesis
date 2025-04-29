@@ -1,0 +1,101 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: FrontMatter/Dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: FrontMatter/Thanks.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: FrontMatter/Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: FrontMatter/Contents.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: MainMatter/Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: MainMatter/Background.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: MainMatter/Solution.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: MainMatter/Results.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: BackMatter/Conclusions.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: BackMatter/Bibliography.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: BackMatter/Glossary.aux
+Database file #1: Bibliography.bib
+Warning--I didn't find a database entry for "factoid"
+Warning--I didn't find a database entry for "CVRP"
+Warning--I didn't find a database entry for "VRPTW"
+Warning--I didn't find a database entry for "2002vehicle"
+Warning--I didn't find a database entry for "1964scheduling"
+Warning--I didn't find a database entry for "1974networks"
+Warning--I didn't find a database entry for "1981complexity"
+Warning--I didn't find a database entry for "1997tabu"
+Warning--I didn't find a database entry for "ALNS-2007"
+Warning--I didn't find a database entry for "Osman-1996"
+Warning--I didn't find a database entry for "Vns-Component-2013"
+Warning--I didn't find a database entry for "Alina2010"
+Warning--I didn't find a database entry for "Alina2017"
+Warning--I didn't find a database entry for "Camila"
+Warning--I didn't find a database entry for "Daniela"
+Warning--I didn't find a database entry for "JJ"
+Warning--I didn't find a database entry for "Hector"
+Warning--I didn't find a database entry for "Heidy"
+Warning--I didn't find a database entry for "Amous-2017"
+Warning--I didn't find a database entry for "VRPPD"
+Warning--I didn't find a database entry for "multi"
+Warning--I didn't find a database entry for "backhauls1998"
+Warning--I didn't find a database entry for "puede"
+Warning--I didn't find a database entry for "FirstVRPAPP"
+Warning--I didn't find a database entry for "mladenovic1995variable"
+Warning--I didn't find a database entry for "mladenovic1997variable"
+Warning--I didn't find a database entry for "Lisp1990"
+Warning--I didn't find a database entry for "Lisp2006"
+Warning--I didn't find a database entry for "CLOS"
+Warning--I didn't find a database entry for "Data"
+You've used 14 entries,
+            2118 wiz_defined-function locations,
+            651 strings with 7943 characters,
+and the built_in function-call counts, 5084 in all, are:
+= -- 479
+> -- 309
+< -- 0
++ -- 123
+- -- 108
+* -- 418
+:= -- 892
+add.period$ -- 41
+call.type$ -- 14
+change.case$ -- 95
+chr.to.int$ -- 0
+cite$ -- 14
+duplicate$ -- 149
+empty$ -- 348
+format.name$ -- 108
+if$ -- 1000
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 13
+newline$ -- 72
+num.names$ -- 28
+pop$ -- 75
+preamble$ -- 1
+purify$ -- 81
+quote$ -- 0
+skip$ -- 103
+stack$ -- 0
+substring$ -- 315
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 56
+warning$ -- 0
+while$ -- 47
+width$ -- 16
+write$ -- 151
+(There were 30 warnings)
