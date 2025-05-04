@@ -1,12 +1,13 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{Introducción}{8}{chapter*.6}%
-\contentsline {section}{\numberline {0.1}Características del \emph {dataset} de grabaciones}{8}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Motivaciones de la investigación}{10}{section.0.2}%
-\contentsline {section}{\numberline {0.3}Problema científico}{11}{section.0.3}%
-\contentsline {section}{\numberline {0.4}Objetivos de la tesis}{11}{section.0.4}%
-\contentsline {chapter}{\numberline {1}Detección de Individuos a Partir de Señales de Audio}{14}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Métodos y Metodologías}{15}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Resultados e Interpretación}{16}{chapter.3}%
-\contentsline {chapter}{Conclusiones y Recomendaciones}{17}{chapter*.7}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{18}{chapter*.8}%
+\contentsline {section}{\numberline {0.1}Motivación y justificación}{9}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Formulación del problema}{10}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Hipótesis de partida}{12}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Objetivos}{12}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Propuesta de solución}{13}{section.0.5}%
+\contentsline {chapter}{\numberline {1}Detección de Individuos a Partir de Señales de Audio}{15}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Métodos y Metodologías}{16}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Resultados e Interpretación}{17}{chapter.3}%
+\contentsline {chapter}{Conclusiones y Recomendaciones}{18}{chapter*.7}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{19}{chapter*.8}%

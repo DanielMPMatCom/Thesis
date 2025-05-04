@@ -57,45 +57,45 @@ Warning--I didn't find a database entry for "Lisp1990"
 Warning--I didn't find a database entry for "Lisp2006"
 Warning--I didn't find a database entry for "CLOS"
 Warning--I didn't find a database entry for "Data"
-You've used 14 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            651 strings with 7943 characters,
-and the built_in function-call counts, 5084 in all, are:
-= -- 479
-> -- 309
-< -- 0
-+ -- 123
-- -- 108
-* -- 418
-:= -- 892
-add.period$ -- 41
-call.type$ -- 14
-change.case$ -- 95
+            707 strings with 9559 characters,
+and the built_in function-call counts, 8169 in all, are:
+= -- 785
+> -- 467
+< -- 1
++ -- 188
+- -- 162
+* -- 648
+:= -- 1420
+add.period$ -- 68
+call.type$ -- 23
+change.case$ -- 148
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 149
-empty$ -- 348
-format.name$ -- 108
-if$ -- 1000
+cite$ -- 23
+duplicate$ -- 253
+empty$ -- 572
+format.name$ -- 162
+if$ -- 1620
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 13
-newline$ -- 72
-num.names$ -- 28
-pop$ -- 75
+int.to.str$ -- 23
+missing$ -- 23
+newline$ -- 117
+num.names$ -- 46
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 126
 quote$ -- 0
-skip$ -- 103
+skip$ -- 172
 stack$ -- 0
-substring$ -- 315
-swap$ -- 14
-text.length$ -- 0
+substring$ -- 528
+swap$ -- 28
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 90
 warning$ -- 0
-while$ -- 47
-width$ -- 16
-write$ -- 151
+while$ -- 80
+width$ -- 25
+write$ -- 248
 (There were 30 warnings)

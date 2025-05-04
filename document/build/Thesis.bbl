@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{acevedo2009automated}
+Miguel~A Acevedo, Carlos~J Corrada-Bravo, H{\'e}ctor Corrada-Bravo, Luis~J
+  Villanueva-Rivera, and T~Mitchell Aide.
+\newblock Automated classification of bird and amphibian calls using machine
+  learning: A comparison of methods.
+\newblock {\em Ecological Informatics}, 4(4):206--214, 2009.
+
 \bibitem{akmentins2011vocal}
 Mauricio~S Akmentins.
 \newblock Vocal repertoire of two species of oreobates jim{\'e}nez de la
@@ -20,6 +27,11 @@ Roberto Alonso, Ariel Rodr{\'\i}guez-G{\'o}mez, and Alberto~R Estrada.
   de eleutherodactylus eileenae (anura: Leptodactylidae).
 \newblock {\em Revista espa{\~n}ola de herpetolog{\'\i}a}, 15(2001):45--52,
   2001.
+
+\bibitem{bialek2012biophysics}
+William Bialek.
+\newblock {\em Biophysics: searching for principles}.
+\newblock Princeton University Press, 2012.
 
 \bibitem{blumstein2011acoustic}
 Daniel~T Blumstein, Daniel~J Mennill, Patrick Clemins, Lewis Girod, Kung Yao,
@@ -46,6 +58,13 @@ Luciano da~F Costa.
 \newblock Comparing cross correlation-based similarities.
 \newblock {\em arXiv preprint arXiv:2111.08513}, 2021.
 
+\bibitem{estrada1994herpetofauna}
+AR~Estrada.
+\newblock Herpetofauna de la cuenca banao-higuanojo, sancti sp{\'\i}ritus,
+  cuba.
+\newblock {\em Revista de la Academia Colombiana de Ciencias}, 19:353--360,
+  1994.
+
 \bibitem{farina2018ecoacoustics}
 Almo Farina.
 \newblock Ecoacoustics: A quantitative approach to investigate the ecological
@@ -63,11 +82,46 @@ Daniel Jurafsky and James~H Martin.
 \newblock Speech and language processing: An introduction to natural language
   processing, computational linguistics, and speech recognition.
 
+\bibitem{mora2011biological}
+Thierry Mora and William Bialek.
+\newblock Are biological systems poised at criticality?
+\newblock {\em Journal of Statistical Physics}, 144:268--302, 2011.
+
+\bibitem{reyes2019transmission}
+A~Reyes, M~Curbelo, F~Tejera, A~Rivera, G~Simon, O~Ramos, MS~Turner, and
+  E~Altshuler.
+\newblock Transmission of danger information past physical barriers by ants.
+\newblock {\em arXiv preprint arXiv:1904.03236}, 2019.
+
 \bibitem{sanchez2017methodology}
 Ignacio S{\'a}nchez-Gendriz and Linilson~Rodrigues Padovese.
 \newblock A methodology for analyzing biological choruses from long-term
   passive acoustic monitoring in natural areas.
 \newblock {\em Ecological Informatics}, 41:1--10, 2017.
+
+\bibitem{schneidman2006weak}
+Elad Schneidman, Michael~J Berry, Ronen Segev, and William Bialek.
+\newblock Weak pairwise correlations imply strongly correlated network states
+  in a neural population.
+\newblock {\em Nature}, 440(7087):1007--1012, 2006.
+
+\bibitem{schwartz1958new}
+Albert Schwartz.
+\newblock A new frog of the auriculatus group of the genus eleutherodactylus
+  from western cuba.
+\newblock {\em Herpetologica}, 14(2):69--77, 1958.
+
+\bibitem{towsey2014use}
+Michael Towsey, Jason Wimmer, Ian Williamson, and Paul Roe.
+\newblock The use of acoustic indices to determine avian species richness in
+  audio-recordings of the environment.
+\newblock {\em Ecological Informatics}, 21:110--119, 2014.
+
+\bibitem{woolbright1985patterns}
+Lawrence~L Woolbright.
+\newblock Patterns of nocturnal movement and calling by the tropical frog
+  eleutherodactylus coqui.
+\newblock {\em Herpetologica}, pages 1--9, 1985.
 
 \bibitem{xie2022frog}
 Jie Xie, Mingying Zhu, Kai Hu, Jinglan Zhang, Harry Hines, and Ya~Guo.

@@ -268,6 +268,11 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendla
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bkm-pdftex.def
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
@@ -346,14 +351,7 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\eps
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
-OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT .\Graphics\uhlogo.pdf
 INPUT .\Graphics\uhlogo.pdf
@@ -475,6 +473,40 @@ OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Int
 INPUT .\MainMatter\Introduction.tex
 INPUT .\MainMatter\Introduction.tex
 INPUT MainMatter\Introduction.tex
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt9.tfm
 INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
@@ -482,27 +514,33 @@ INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8t.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplbi8t.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8r.tfm
-INPUT .\Graphics\mic_map.jpg
-INPUT .\Graphics\mic_map.jpg
-INPUT .\Graphics\mic_map.jpg
-INPUT .\Graphics\mic_map.jpg
-INPUT .\Graphics\mic_map.jpg
-INPUT .\Graphics\mic_map.jpg
-INPUT .\Graphics\mic_map.jpg
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8t.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro8t.vf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+INPUT .\Graphics\mic_map.jpg
+INPUT .\Graphics\mic_map.jpg
+INPUT .\Graphics\mic_map.jpg
+INPUT .\Graphics\mic_map.jpg
+INPUT .\Graphics\mic_map.jpg
+INPUT .\Graphics\mic_map.jpg
+INPUT .\Graphics\mic_map.jpg
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplbi8t.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8r.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7y.vf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
@@ -584,12 +622,12 @@ INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibl
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Glossary.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Glossary.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Glossary.aux
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.out
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.brf
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.brf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt9.pfb
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt9.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplb8a.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplb8a.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplbi8a.pfb
