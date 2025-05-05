@@ -13,8 +13,8 @@ Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: MainMatter/Introduction.aux
 Reallocating 'name_of_file' (item size: 1) to 26 items.
 A level-1 auxiliary file: MainMatter/Background.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: MainMatter/Solution.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: MainMatter/Methods.aux
 Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: MainMatter/Results.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
@@ -57,45 +57,45 @@ Warning--I didn't find a database entry for "Lisp1990"
 Warning--I didn't find a database entry for "Lisp2006"
 Warning--I didn't find a database entry for "CLOS"
 Warning--I didn't find a database entry for "Data"
-You've used 23 entries,
+You've used 41 entries,
             2118 wiz_defined-function locations,
-            707 strings with 9559 characters,
-and the built_in function-call counts, 8169 in all, are:
-= -- 785
-> -- 467
-< -- 1
-+ -- 188
-- -- 162
-* -- 648
-:= -- 1420
-add.period$ -- 68
-call.type$ -- 23
-change.case$ -- 148
+            823 strings with 12972 characters,
+and the built_in function-call counts, 14330 in all, are:
+= -- 1405
+> -- 764
+< -- 4
++ -- 310
+- -- 262
+* -- 1093
+:= -- 2463
+add.period$ -- 125
+call.type$ -- 41
+change.case$ -- 250
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 253
-empty$ -- 572
-format.name$ -- 162
-if$ -- 1620
+cite$ -- 41
+duplicate$ -- 468
+empty$ -- 1022
+format.name$ -- 262
+if$ -- 2882
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 23
-newline$ -- 117
-num.names$ -- 46
-pop$ -- 121
+int.to.str$ -- 41
+missing$ -- 39
+newline$ -- 210
+num.names$ -- 82
+pop$ -- 203
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 211
 quote$ -- 0
-skip$ -- 172
+skip$ -- 332
 stack$ -- 0
-substring$ -- 528
-swap$ -- 28
-text.length$ -- 1
+substring$ -- 945
+swap$ -- 71
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
+type$ -- 162
 warning$ -- 0
-while$ -- 80
-width$ -- 25
-write$ -- 248
+while$ -- 143
+width$ -- 43
+write$ -- 451
 (There were 30 warnings)

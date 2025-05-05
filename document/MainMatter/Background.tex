@@ -1,14 +1,325 @@
-\chapter{Detección de Individuos a Partir de Señales de Audio}\label{chapter: VRP}
+\chapter{Antecedentes}\label{chapter: VRP}
+
+
+Las primeras grabaciones sistemáticas de sonidos de vida 
+silvestre se realizaron en mayo de 1929, cuando Arthur A. 
+Allen y Peter P. Kellogg registraron por primera vez el canto 
+de especies neárticas en un parque de Ithaca, Nueva York 
+\cite{macaulaylibrary1929}. Este hito marcó el nacimiento de 
+la colección que hoy conocemos como Macaulay Library, el 
+mayor archivo multimedia de fauna del mundo, con más de 2.6 
+millones de grabaciones de audio y cobertura de casi todas 
+las especies de aves, así como registros de insectos, peces, 
+anfibios y mamíferos \cite{allaboutbirds1929}.
+
+Durante décadas, la bioacústica de campo dependió de hardware 
+analógico y procesamiento manual de cintas, lo cual limitaba 
+el volumen de datos y la reproducibilidad de los estudios 
+\cite{blumstein2011acoustic}. Con la transición a sistemas digitales 
+a principios de los años 2000, la monitorización acústica 
+pasiva (PAM) emergió como herramienta clave en ecología y 
+conservación, permitiendo grabaciones continuas y remotas que 
+facilitan el muestreo a gran escala sin perturbar el 
+comportamiento natural de los organismos \cite{acevedo2009automated}.
+
+Las organizaciones de conservación, entre ellas WWF, 
+impulsaron la adopción de PAM en áreas protegidas, 
+destacando la necesidad de protocolos robustos de 
+preprocesamiento para atenuar ruido ambiental (como lluvia, 
+viento y tráfico) y mejorar la relación señal-ruido 
+\cite{blumstein2011acoustic}. Paralelamente, el desarrollo de 
+índices acústicos automatizados, introducidos por Towsey et 
+al. (2014), permitió estimar la riqueza de especies en 
+paisajes sonoros complejos mediante métricas computables 
+directamente de las grabaciones \cite{towsey2014use}.
+
+La creación de grandes conjuntos de datos de referencia, 
+como AnuraSet para llamadas de anuros neotropicales, 
+estandarizó la evaluación de algoritmos de identificación en 
+entornos ruidosos, facilitando la comparación de metodologías 
+y la reproducibilidad de los resultados 
+\cite{canas2023dataset}. Revisiones como 
+la de Stowell (2022) han descrito las oportunidades y 
+desafíos de incorporar redes neuronales profundas en 
+bioacústica, estableciendo una hoja de ruta para futuros 
+avances computacionales \cite{stowell2022computational}.
+
+En el ámbito del modelado de interacciones, Ōta et al. (2020) 
+cuantificaron los mecanismos de sincronización en coros de 
+ranas a partir de características dinámicas de las llamadas, 
+demostrando la aplicabilidad de enfoques de red para estudiar 
+la co-emisión y la causalidad acústica 
+\cite{ota2020interaction}. Asimismo, Kalra (2024) examinó la 
+percepción de señales en ambientes complejos, proporcionando 
+métodos de localización pasiva que mejoran la atribución de 
+fuentes en PAM \cite{kalra2024signal}.
+
+Estos avances tecnológicos y metodológicos forman el 
+fundamento de la presente investigación, que adapta flujos 
+computacionales y modelos estadísticos de interacción al 
+estudio de los coros de \emph{Eleutherodactylus eileenae} en 
+su entorno natural cubano.
 
 
 
+% region epígrafe 1
+\section{Detección de individuos en grabaciones}
+\label{sec:deteccion_individuos}
 
 
 
+La detección precisa de emisores individuales en grabaciones 
+de campo constituye un paso esencial para cualquier estudio 
+bioacústico que aspire a caracterizar patrones de 
+comportamiento a nivel de individuos. Este proceso implica la 
+identificación de eventos acústicos relevantes en señales, 
+la discriminación de llamadas frente a ruido ambiental y, 
+cuando es posible, la atribución de cada emisión a su emisor 
+de origen. A continuación, se revisan primero los métodos 
+clásicos de clasificación de señales basados en análisis 
+espectral y extracción de características, y luego se exponen 
+enfoques de localización pasiva y heurísticas de asignación 
+que permiten estimar la procedencia de las llamadas.
+
+\subsection{Métodos clásicos de clasificación de señales}
+
+La clasificación de vocalizaciones animales en grabaciones 
+se fundamenta en la extracción de características 
+espectrales a partir de la transformada rápida de Fourier 
+(FFT) \cite{cooley1965algorithm}. Sobre esta base, la conversión a 
+coeficientes cepstrales en frecuencia mel (MFCC) ha 
+demostrado ser especialmente eficaz para representar texturas 
+acústicas complejas, tal como lo estableció Mermelstein 
+(1976) en el ámbito de voz humana y luego adaptado a 
+bioacústica \cite{mermelstein1976distance}. Zhang et al. (2021) 
+emplearon la descomposición de espectrogramas mel y la fusión de 
+modelos para clasificar escenas acústicas, alcanzando mejoras 
+significativas en la precisión de clasificación 
+\cite{zhang2021acoustic}. Xie et al. (2016) extendieron este 
+enfoque integrando detección de eventos acústicos con 
+aprendizaje multi-etiqueta sobre espectrogramas, lo que 
+permitió discriminar actividades de canto de ruido de lluvia 
+con resultados prometedores \cite{xie2016detecting}. 
+Estos métodos clásicos forman la columna vertebral de los 
+flujos heurísticos de detección, siendo especialmente 
+adecuados cuando solo se dispone de una única pista de audio.
+
+\subsection{Localización y asignación de fuentes}
+Aunque la verdadera localización tridimensional de emisores 
+requiere múltiples canales sincronizados, diversos autores 
+han explorado técnicas de triangulación y diferencias de 
+tiempo de llegada (TDOA) para estimar direcciones de origen. 
+Spiesberger y Fristrup (1990) detallaron un método de TDOA 
+que calcula desplazamientos de fase entre pares de micrófonos 
+para inferir la dirección de la fuente sonora 
+\cite{spiesberger1990passive}. Cuando solo se cuenta 
+con grabaciones monofónicas, se han diseñado heurísticas 
+basadas en la intensidad relativa de la señal y la similitud 
+espectral. Kalra (2024) demostró que, al comparar la energía 
+de una llamada en momentos consecutivos y su correlación 
+espectral con plantillas predefinidas, es posible asignar 
+eventos a individuos cercanos con una precisión alta
+\cite{kalra2024signal}. Estas heurísticas aprovechan la atenuación 
+del sonido en el espacio y la coherencia espectral para 
+discriminar entre vocalizaciones de distintos machos dentro 
+de una misma grabación, constituyendo una alternativa 
+pragmática cuando no se dispone de redes de micrófonos 
+múltiples.
 
 
 
+% region epígrafe 2
+\section{Análisis de coros y comportamiento grupal}
+\label{sec:analisis_coros}
 
+El estudio de los coros de anuros combina observaciones de 
+campo con análisis cuantitativos para desentrañar cómo las 
+interacciones individuales dan lugar a patrones colectivos de 
+canto. Este enfoque implica medir la distribución espacial y 
+temporal de las vocalizaciones, identificar picos de actividad 
+sincronizada y describir las reglas de proximidad y fase que 
+los machos siguen al unirse al coro. A continuación se revisan 
+los principales hallazgos sobre la formación de coros y las 
+herramientas ecoacústicas desarrolladas para caracterizar su 
+estructura y dinámica.
+
+
+\subsection{Patrones de formación de coros} 
+En \emph{Eleutherodactylus coqui}, Woolbright (1985) registró 
+que los individuos ascienden al anochecer a perchas de la 
+vegetación, donde emiten series regulares de “co-qui” 
+alternadas con períodos de silencio, y observó que la 
+densidad de cantores influye en la cercanía entre perchas, 
+reduciéndose la distancia media en noches de alta actividad 
+\cite{woolbright1985patterns}. Stewart y Pough (1983) encontraron en 
+la misma especie que la localización de los machos en el 
+espacio de canto está relacionada con la disponibilidad de 
+refugios y la competencia territorial, ajustando su posición 
+en respuesta a la presencia de vecinos \cite{stewart1983population}. 
+Drewry y Rand (1983) describieron patrones similares en 
+\emph{E. coqui} en Puerto Rico, donde la sincronización de 
+picos vocales ocurre en respuesta a variaciones de luz y 
+temperatura, con crestas al anochecer y al amanecer 
+\cite{drewry1983characteristics}.  
+
+En el caso de \emph{Eleutherodactylus eileenae} en Cuba, 
+Alonso et al. (2001) analizaron la actividad acústica de 
+machos cantores y revelaron dos picos de emisión al anochecer 
+y al amanecer, así como desplazamientos verticales en la 
+vegetación que enfatizan la dimensión espacial de la formación 
+de coros \cite{alonso2001patrones}. Estos hallazgos concuerdan con 
+los patrones descritos en otras especies de \emph{Eleutherodactylus}, 
+donde la competencia acústica y las condiciones 
+microambientales determinan la estructura del coro 
+\cite{townsend1994reproductive}. Más recientemente, Ōta et al. (2020) 
+cuantificaron dinámicamente las interacciones entre pares de 
+individuos mediante análisis de series temporales de llamadas, 
+demostrando que algunos machos actúan como “iniciadores” de 
+pulsos colectivos, un comportamiento que puede describirse 
+con modelos de red de interacción \cite{ota2020interaction}.  
+
+\subsection{Ecoacústica de coros}
+La ecoacústica de coros se apoya en el uso de índices 
+acústicos y herramientas computacionales para detectar y 
+caracterizar la actividad colectiva sin necesidad de 
+seguimiento visual. Boelman et al. (2007) introdujeron el
+Bioacoustic Index (BI), calculado como la energía acumulada 
+en la banda de frecuencias de interés \cite{boelman2007multi}, 
+mientras que Pieretti et al. (2011) complementaron este enfoque con el 
+Acoustic Complexity Index (ACI), que mide variaciones 
+espectrales dentro de ventanas temporales para estimar la 
+riqueza y la intensidad coral, mostrando alta correlación con 
+el número de machos activos en grabaciones de bosques 
+tropicales, y demostraron que ambos 
+índices permiten resaltar 
+los períodos de mayor sincronización en coros de anfibios 
+\cite{pieretti2011new}. 
+Además, Farina (2018) estableció un marco cuantitativo para la 
+ecoacústica que enfatiza la integración de índices acústicos en 
+estudios de dinámica comunitaria, subrayando su utilidad para 
+evaluar patrones de sincronización en coros de anuros y otros 
+sistemas biológicos \cite{farina2018ecoacoustics}.
+
+En 2021, Gan et al. propusieron un método de reconocimiento 
+de coros basado en espectrogramas falsos en color y 
+aprendizaje automático, logrando identificar patrones de 
+emisión colectiva con una precisión del 77 \% en grabaciones 
+de campo de especies tropicales \cite{gan2021novel}. Brodie et al. 
+(2020) evaluaron la eficacia de múltiples índices acústicos y 
+confirmaron que la combinación de ACI, BI y Net Spectrum 
+ofrece una representación robusta de la estructura coral a lo 
+largo de ciclos nocturnos \cite{brodie2020automated}.
+
+
+% region epígrafe 3
+\section{Modelos de interacción y causalidad}
+\label{sec:modelos_interaccion}
+
+En ciencias biológicas y ecológicas, comprender cómo las 
+interacciones locales entre individuos dan lugar a fenómenos 
+colectivos constituye un desafío central. Los modelos 
+estadísticos de redes, en particular las formulaciones de 
+máxima entropía equivalentes al modelo de Ising, ofrecen un 
+marco potente para describir la sincronización y la causalidad 
+en sistemas de canto animal. En esta sección se revisan primero 
+las bases y aplicaciones de los modelos de Ising en redes 
+biológicas, y luego se presentan las principales técnicas de 
+inferencia de causalidad adaptadas a series temporales acústicas.
+
+\subsection{Modelos estadísticos de redes}
+El modelo de Ising, originado en física estadística para 
+describir ferromagnetismo, se reformuló como un problema de 
+máxima entropía para ajustar distribuciones observadas de 
+estados binarios con correlaciones dadas. Schneidman et al. 
+(2006) demostraron que un modelo de Ising con interacciones 
+par a par reproduce con alta fidelidad las correlaciones de 
+actividad en poblaciones de neuronas retinianas, sin necesidad 
+de términos de orden superior \cite{schneidman2006weak}. Mora y 
+Bialek (2011) ampliaron esta perspectiva, argumentando que 
+sistemas biológicos (desde redes neuronales hasta colonias de 
+insectos) operan cerca de puntos críticos de fase, un rasgo que 
+maximiza la capacidad de información y la sensibilidad a 
+perturbaciones externas \cite{mora2011biological}.  
+
+Para inferir los parámetros de interacción \(J_{ij}\) en 
+sistemas fuera de equilibrio, Zeng et al. (2013) desarrollaron 
+un método de máxima verosimilitud para modelos de Ising 
+asíncronos, derivando reglas de aprendizaje que dependen 
+únicamente de las correlaciones temporales de los datos 
+\cite{zeng2013maximum}. Chau Nguyen et al. (2017) revisaron un 
+amplio espectro de métodos de inferencia inversa (incluyendo 
+pseudoverosimilitud y aproximaciones de mensaje) que escalan 
+eficientemente a grandes redes biológicas, destacando 
+aplicaciones en neurociencia y ecología \cite{chau2017inverse}. 
+Estos enfoques han permitido reconstruir estructuras de 
+interacción tanto en poblaciones de neuronas 
+(Tkačik et al., 2006) como en sistemas de canto colectivo, donde 
+las “conexiones” cuantifican la probabilidad de co-emisión entre 
+pares de individuos \cite{tkacik2006ising}.
+
+\subsection{Técnicas de inferencia de causalidad}
+Más allá de la correlación, establecer relaciones causales en 
+series temporales acústicas requiere herramientas específicas. 
+El enfoque clásico de Granger (1969) define la causalidad en 
+términos predictivos: una serie \(X\) "cause" a otra \(Y\) si 
+el pasado de \(X\) mejora la predicción de \(Y\) más allá de lo 
+que hace el propio pasado de \(Y\) \cite{granger1969investigating}. 
+Porta y Faes (2015) ampliaron este marco en el contexto de 
+sistemas fisiológicos y redes neuronales, describiendo cómo la 
+causalidad de Wiener-Granger puede aplicarse a señales 
+biológicas con metodologías que consideran tanto ruido como 
+dinámicas no lineales \cite{porta2015wiener}.  
+
+
+Para capturar relaciones más complejas, se han empleado medidas de 
+información direccional como la entropía de transferencia 
+(Schreiber, 2000), que cuantifica flujos de información sin 
+asumir linealidad \cite{schreiber2000measuring}. Más recientemente, el 
+método de Convergent Cross Mapping (Sugihara et al., 2012) ha 
+mostrado robustez al inferir causalidad en sistemas dinámicos de 
+alta dimensionalidad, al reconstruir espacios de fase conjuntos 
+y medir la habilidad de uno de los vectores de recuperación del 
+otro \cite{sugihara2012detecting}. Estas técnicas proporcionan un 
+conjunto de herramientas complementarias para analizar la 
+causalidad acústica en coros de \emph{E.\,eileenae}, permitiendo 
+distinguir interacciones directas de sincronizaciones inducidas 
+por factores ambientales comunes.
+
+% region epígrafe 4
+\section{Antecedentes específicos en \emph{E.\,eileenae}}
+\label{sec:antecedentes_eileenae}
+
+La investigación acerca de la biología y ecología de 
+\emph{Eleutherodactylus eileenae} arrancó fundamentalmente con 
+estudios taxonómicos y de distribución. Schwartz (1958) 
+describió por primera vez la especie en la región occidental de 
+Cuba, señalando su afinidad con el subgénero 
+\emph{Eleutherodactylus auriculatus} y detallando caracteres 
+morfológicos diagnósticos \cite{schwartz1958new}. Posteriormente, 
+Estrada (1984, 1994) amplió el conocimiento de su rango 
+geográfico, documentando nuevas localidades en Sancti Spíritus 
+y otros municipios centrales, así como preferencias de hábitat 
+que incluyen bosques semideciduos, pinares y cafetales hasta 
+los 900 m s.\,n.\,m. \cite{estrada1984nuevas,estrada1994herpetofauna}. 
+Estas obras sentaron las bases para comprender la distribución 
+espacial de \emph{E.\,eileenae} y su adaptación a distintos 
+sustratos, como bromelias y hojarasca.
+
+En el plano de la bioacústica y la ecología trófica, Alonso et 
+al. (2001) llevaron a cabo muestreos en la Reserva de la 
+Biosfera “Sierra del Rosario”, donde cuantificaron patrones 
+diel y estacionales de vocalización de los machos y 
+relacionaron la actividad acústica con la alimentación mediante 
+análisis de contenido estomacal \cite{alonso2001patrones}. Encontraron 
+dos picos de canto, al anochecer y al amanecer, coincidentes 
+con desplazamientos verticales en la vegetación, y demostraron 
+que durante los períodos de depresión vocal los machos se 
+alimentan, consumiendo principalmente himenópteros y arácnidos. 
+Este estudio fue el primero en integrar datos acústicos y 
+tróficos de \emph{E.\,eileenae}, estableciendo el marco 
+experimental y metodológico que la presente tesis extiende 
+mediante flujos computacionales automatizados y modelado de 
+interacciones acústicas.
 
 
 

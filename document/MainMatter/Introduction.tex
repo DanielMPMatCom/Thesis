@@ -10,10 +10,10 @@
 
 Las técnicas de monitorización acústica automatizada se han 
 convertido en una herramienta esencial para el estudio de 
-comunidades animales en su medio natural. En particular, el 
+comunidades de animales en su medio natural. En particular, el 
 análisis del canto de los anuros ofrece información valiosa 
 sobre sus estrategias de apareamiento, la dinámica de sus 
-poblaciones y la salud de los ecosistemas en los que habitan. 
+poblaciones y la salud de los ecosistemas en los que habitan \cite{blumstein2011acoustic}. 
 La rana cubana \emph{Eleutherodactylus eileenae} (Dunn, 1929), 
 endémica de Cuba, constituye un modelo idóneo para investigar 
 estos procesos, pues sus machos forman coros nocturnos cuyos 
@@ -36,15 +36,15 @@ prolongada y de frecuencia ligeramente superior. Esta estructura ha motivado el 
 del término “Colín” para referirse tanto a cada canto individual como, 
 coloquialmente, a la especie misma. Estas llamadas desempeñan un papel crucial en la 
 comunicación intraespecífica, mediando aspectos relacionados con el estado 
-fisiológico y la competencia territorial. Además, se ha observado que los machos 
+fisiológico y la competencia territorial \cite{alonso2001patrones}. Además, se ha observado que los machos 
 forman agrupaciones o “coros”, sincronizando sus cantos para aumentar la eficacia en 
 la atracción de hembras y reducir el riesgo de depredación.
 
 La presente investigación desarrolla un flujo computacional automatizado para 
-procesar grabaciones de los cantos de los Colines y, a partir de él, analizar 
-detalladamente la dinámica de estos coros y las interacciones acústicas asociadas. 
-El objetivo es comprender los patrones de apareamiento de \emph{E.\,eileenae} y las 
-estrategias de comunicación que emplea en su entorno natural.
+procesar grabaciones de los cantos de los Colines y, a partir de él, comenzar a analizar 
+ las interacciones acústicas asociadas a estos coros. 
+El objetivo es comprender las 
+estrategias de comunicación que emplea \emph{E.\,eileenae} en su entorno natural.
 En la Figura \ref{fig:colin} se muestra un ejemplar de esta especie, y en la
 Guía sonora de los anfibios de Cuba 
 \footnote{Grabación disponible en: \url{https://www.fonozoo.com/fnz_detalles_registro_amphibia.php?id=97953&tipo_registro=1}}
@@ -63,7 +63,7 @@ se puede encontrar una breve grabación de su canto y otros datos relevantes.\\
 
 La ecoacústica ha evolucionado desde la grabación pasiva hasta flujos computacionales 
 que automatizan la detección de llamadas en ambientes ruidosos 
-\cite{acevedo2009automated,blumstein2011acoustic,towsey2014use}. Sin embargo, en Cuba pocos estudios 
+\cite{acevedo2009automated,blumstein2011acoustic}. Sin embargo, en Cuba pocos estudios 
 han integrado estas técnicas con modelos de interacción estadística.
 
 El análisis manual de grabaciones de campo resulta lento, 
@@ -125,7 +125,7 @@ deseadas. En la Figura \ref{fig:map} se muestra la distribución geográfica de 
 \end{figure}
 
 En este ámbito, el problema central consiste en diseñar un flujo 
-heurístico que permita sincronizar con precisión milimétrica las 
+heurístico que permita sincronizar con precisión las 
 nueve pistas de audio, detectar de forma fiable los instantes en 
 que cada macho emite su canto (denominado “Colín”) y asignar 
 cada evento al micrófono, y por ende al individuo, 
@@ -149,7 +149,7 @@ futuros estudios bioacústicos. Este estudio es el primero en
 Cuba en aplicar el modelo de Ising para describir 
 interacciones acústicas en coros de anuros, siguiendo 
 aproximaciones similares en redes 
-de antenas y colonias de insectos \cite{schneidman2006weak,mora2011biological,bialek2012biophysics,reyes2019transmission}.
+neuronales y colonias de insectos \cite{schneidman2006weak,mora2011biological,bialek2012biophysics,reyes2019transmission}.
 
 \section{Hipótesis de partida}
 \label{sec:hipotesis}
@@ -186,13 +186,11 @@ ecoacústica.
 \section{Objetivos}
 \label{sec:objetivos}
 
-El objetivo general de esta tesis es diseñar, implementar y 
-validar un flujo computacional heurístico para la detección, 
-clasificación y modelado de las interacciones acústicas en 
-coros de machos de \emph{Eleutherodactylus eileenae}, de modo 
-que se pueda reconstruir la dinámica de sus cantos y 
-describir cuantitativamente la sincronización y causalidad 
-presentes en el conjunto. 
+El objetivo general de esta tesis es desarrollar y 
+validar un flujo heurístico que, mediante la detección y 
+clasificación de los cantos de \emph{E.\,eileenae}, permita 
+reconstruir la dinámica de sus coros y cuantificar su 
+sincronización y causalidad.
 Para ello se plantean los siguientes objetivos específicos:
 
 \begin{enumerate}
@@ -241,8 +239,7 @@ evento servirá para construir un grafo de interacciones,
 modelado con un enfoque de máxima verosimilitud en un sistema 
 análogo al modelo de Ising. El ajuste de los 
 parámetros \(J_{ij}\) se llevará a cabo mediante un algoritmo de 
-descenso por gradiente, incorporando regularización 
-para evitar sobreajuste.  
+descenso por gradiente.  
 
 Este flujo, además de automatizar completamente la extracción de 
 datos, permitirá validar la hipótesis de partida mediante 
@@ -263,7 +260,7 @@ para la detección de los “Colines” y la asignación de cada
 canto a su emisor, y la formulación del modelo de interacciones 
 basado en Ising con inferencia por máxima verosimilitud y 
 descenso por gradiente. En el Capítulo 3 se presentan los 
-resultados obtenidos: evaluación de la precisión de 
+resultados: evaluación de la precisión de 
 sincronización, rendimiento de los detectores de canto, 
 exactitud de la asignación micrófono-Colín y análisis de las 
 interacciones inferidas \(\{J_{ij}\}\). Finalmente, en las 
@@ -496,146 +493,3 @@ del estudio y las líneas de investigación futura.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-% \section*{Contexto histórico y social}
-% Desde finales del siglo XIX, la investigación en Cuba 
-% sobre anfibios se ha centrado en la catalogación y distribución 
-% geográfica de especies endémicas, con obras clásicas como 
-% Gundlach (1880) y Barbour (1914, 1919) marcando el inicio de la 
-% herpetología en la isla 
-% \cite{gundlach2023contribucion,barbour1914contribution}. 
-% En la segunda mitad del siglo XX, Schwartz y Henderson 
-% (1988, 1991) ampliaron el conocimiento sobre la fauna caribeña, 
-% pero los estudios de ecología conductual seguían siendo 
-% incipientes \cite{schwartz1988,schwartz1991}.  
-% Paralelamente, en el ámbito internacional, la Física Estadística 
-% aplicó modelos de interacción local (como el modelo de Ising) al 
-% estudio de sistemas colectivos (p. ej., spin de materiales o 
-% colonias de hormigas) desde mediados del siglo XX 
-% \cite{ising1925,strogatz2001}. En los últimos veinte años, 
-% este enfoque se ha trasladado a la biología, permitiendo modelar 
-% redes de interacción en poblaciones animales sin intervención 
-% centralizada \cite{mora2011,bialek2012}.  
-% Al mismo tiempo, la ecoacústica se consolidó como disciplina, 
-% combinando métodos de grabación pasiva con análisis 
-% computacional para el monitoreo de fauna silvestre 
-% \cite{blumstein2011,acevedo2009}. 
-% Sin embargo, en Cuba apenas existen trabajos que integren 
-% sensores acústicos y modelos estadísticos para desentrañar 
-% dinámicas de comunicación en grupos de anfibios.
-
-% \section*{Antecedentes del problema científico}
-% La comunicación acústica de los anuros ha sido objeto de 
-% numerosos estudios en sistemas como 
-% \emph{Eleutherodactylus coqui} en Puerto Rico, donde se 
-% documentó la estructura de coros y su sincronización temporal 
-% \cite{stewart1983,stewart1991}. En particular, Stewart y Pough 
-% (1983) y Woolbright (1985) mostraron cómo variaciones en el 
-% ambiente influyen en los picos de actividad vocal y en la 
-% formación de coros \cite{stewart1983,woolbright1985}.  
-% En Cuba, Rodríguez Gómez y Estrada (2001) estudiaron la dieta y 
-% patrón anual de vocalización de \emph{E.\,eileenae}, pero sin 
-% abordar la identificación automática de llamados ni el análisis 
-% de interacciones acústicas en grupo \cite{alonso2001}. 
-% El trabajo de Alonso et al. (2001) proporciona datos ecológicos 
-% y estomacales, así como la delimitación de picos vocálicos, 
-% pero deja abierta la necesidad de métodos reproducibles y a 
-% escala para procesar simultáneamente múltiples grabaciones.  
-% Por otra parte, los micrófonos omnidireccionales capturan 
-% superposiciones de señales, ruido ambiental y cantos de 
-% distintos individuos, lo que en la práctica exige desarrollar 
-% algoritmos capaces de:  
-% \begin{itemize}
-%   \item Sincronizar grabaciones con precisión de milisegundos.
-%   \item Filtrar eventos no deseados (vehículos, otros animales).
-%   \item Atribuir cada emisión sonora a su emisor más probable.
-% \end{itemize}
-% Hasta ahora, estos pasos se han realizado manualmente, 
-% lo que limita la escala del análisis y la reproducibilidad de 
-% los resultados. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% \section*{Contexto histórico-social: estudios de comportamiento colectivo en Cuba}
-% En Cuba, el estudio del comportamiento colectivo se ha 
-% beneficiado de la confluencia entre la biología de campo y la 
-% Física Estadística. Un hito lo constituyó la investigación de 
-% Reyes et al. (2019), quienes realizaron experimentos 
-% controlados con obreras de la hormiga cortadora de hojas 
-% \emph{Atta insularis} para examinar la transmisión de 
-% información de peligro a través de barreras físicas, 
-% demostrando la eficacia de las feromonas de alarma en la 
-% coordinación de la huida colectiva \cite{reyes2019transmission}. 
-% Posteriormente, en un reportaje de \emph{Physics Today} (2016), 
-% Osvanny et al. documentaron cómo equipos de la Universidad de 
-% La Habana aplicaron fotogrametría para seguir en tiempo real 
-% los movimientos de colonias de hormigas y derivar parámetros 
-% como el centro de masa y la densidad grupal, evidenciando 
-% patrones emergentes a partir de interacciones locales 
-% :contentReference[oaicite:1]{index=1}. Estos trabajos 
-% cubanos validaron la hipótesis de que reglas conductuales 
-% simples —por ejemplo, la emisión y detección de compuestos 
-% volátiles— bastan para generar organización compleja en 
-% insectos sociales :contentReference[oaicite:2]{index=2}.
-
-% \section*{Comunicación acústica en anfibios y el desafío del ruido ambiental}
-% La comunicación acústica en anuros es crucial para su 
-% reproducción, pero se ve obstaculizada por el ruido ambiental. 
-% Estudios recientes muestran que los sonidos de baja frecuencia 
-% generados por viento, lluvia o tráfico reducen la relación 
-% señal-a-ruido y el “espacio activo” de las llamadas, limitando 
-% el radio de detectabilidad de los machos 
-% :contentReference[oaicite:3]{index=3}. Investigaciones 
-% neuroetológicas en \emph{Hyla chrysoscelis} han demostrado que 
-% las ranas explotan la separación espacial entre señal y ruido y 
-% las fluctuaciones temporales de fondo para mejorar el 
-% reconocimiento de llamadas conspecíficas 
-% :contentReference[oaicite:4]{index=4}. Asimismo, trabajos en 
-% especies torrentícolas han evidenciado desplazamientos en el 
-% espectro de las llamadas y redundancia temporal como 
-% adaptaciones al ruido constante, lo que sugiere una presión 
-% selectiva sobre el diseño de las señales acústicas 
-% :contentReference[oaicite:5]{index=5}. Por último, se ha 
-% observado que los machos reducen la tasa de emisión o modifican 
-% la amplitud de sus cantos en presencia de ruido antropogénico, 
-% subrayando la necesidad de flujos computacionales robustos que 
-% separen las señales biológicas de las interferencias 
-% :contentReference[oaicite:6]{index=6}.

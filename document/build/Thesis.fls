@@ -324,9 +324,9 @@ INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Intr
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Background.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Background.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Background.aux
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Solution.aux
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Solution.aux
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Solution.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Methods.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Methods.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Methods.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux
@@ -463,6 +463,20 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7t.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7t.tfm
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.toc
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro8t.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7y.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.lof
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.lof
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.lof
@@ -514,11 +528,7 @@ INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
 INPUT .\Graphics\colin.jpg
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8t.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro8t.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8t.vf
@@ -532,18 +542,8 @@ INPUT .\Graphics\mic_map.jpg
 INPUT .\Graphics\mic_map.jpg
 INPUT .\Graphics\mic_map.jpg
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8t.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplbi8t.vf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8r.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7y.vf
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT .\MainMatter\Background.tex
 INPUT .\MainMatter\Background.tex
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Background.aux
@@ -554,18 +554,54 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\p
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb8t.vf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
-INPUT .\MainMatter\Solution.tex
-INPUT .\MainMatter\Solution.tex
-OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Solution.aux
-INPUT .\MainMatter\Solution.tex
-INPUT .\MainMatter\Solution.tex
-INPUT MainMatter\Solution.tex
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb8t.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplbi8t.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8r.tfm
+INPUT .\MainMatter\Methods.tex
+INPUT .\MainMatter\Methods.tex
+OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Methods.aux
+INPUT .\MainMatter\Methods.tex
+INPUT .\MainMatter\Methods.tex
+INPUT MainMatter\Methods.tex
 INPUT .\MainMatter\Results.tex
 INPUT .\MainMatter\Results.tex
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux
 INPUT .\MainMatter\Results.tex
 INPUT .\MainMatter\Results.tex
 INPUT MainMatter\Results.tex
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\zplmr7t.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7y.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT .\BackMatter\Conclusions.tex
 INPUT .\BackMatter\Conclusions.tex
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Conclusions.aux
@@ -607,9 +643,9 @@ INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Intr
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Background.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Background.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Background.aux
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Solution.aux
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Solution.aux
-INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Solution.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Methods.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Methods.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Methods.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux
