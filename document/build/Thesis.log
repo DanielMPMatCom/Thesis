@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  4 MAY 2025 23:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  5 MAY 2025 23:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1015,7 +1015,7 @@ l.80
 <Graphics/mic_map.jpg, id=153, 1284.8pt x 722.7pt>
 File: Graphics/mic_map.jpg Graphic file (type jpg)
 <use Graphics/mic_map.jpg>
-Package pdftex.def Info: Graphics/mic_map.jpg  used on input line 122.
+Package pdftex.def Info: Graphics/mic_map.jpg  used on input line 123.
 (pdftex.def)             Requested size: 360.0pt x 202.49797pt.
 
 
@@ -1023,25 +1023,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-LaTeX Info: Redefining \. on input line 140.
-LaTeX Info: Redefining \% on input line 140.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
 [11]
 
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
 [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.176 
+l.177 
        <./Graphics/mic_map.jpg>]
 
-LaTeX Info: Redefining \. on input line 206.
-LaTeX Info: Redefining \% on input line 206.
+LaTeX Info: Redefining \. on input line 207.
+LaTeX Info: Redefining \% on input line 207.
 [13]
 
-LaTeX Info: Redefining \. on input line 270.
-LaTeX Info: Redefining \% on input line 270.
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
 [14])
 
 LaTeX Info: Redefining \. on input line 75.
@@ -1169,12 +1169,12 @@ LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
 [27]
 
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
 [28]
 
-LaTeX Info: Redefining \. on input line 237.
-LaTeX Info: Redefining \% on input line 237.
+LaTeX Info: Redefining \. on input line 235.
+LaTeX Info: Redefining \% on input line 235.
 [29]))
 
 LaTeX Info: Redefining \. on input line 84.
@@ -1199,20 +1199,20 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: D40FAB1CF17373AD050DA9F870464CD0;2907.
+(rerunfilecheck)             Checksum: 75393946380A64C7BD04DEBCF368D53F;3006.
  ) 
 Here is how much of TeX's memory you used:
- 27964 strings out of 473522
- 520310 string characters out of 5713158
+ 27980 strings out of 473522
+ 520668 string characters out of 5713158
  1056912 words of memory out of 5000000
- 50466 multiletter control sequences out of 15000+600000
+ 50480 multiletter control sequences out of 15000+600000
  621720 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,107p,832b,802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (30 pages, 540665 bytes).
+Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (30 pages, 542315 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
  281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -83,16 +83,17 @@ cuya dinámica no se comprende completamente: ¿cómo influyen la
 densidad de individuos, la configuración espacial de los 
 micrófonos y el ruido ambiental en la estructura del coro? 
 ¿Qué reglas simples de interacción subyacen en la sincronización 
-de los “Colines”? Un enfoque computacional reproducible, basado 
-en algoritmos heurísticos, permite procesar de 
+de los “Colines”? En este contexto, un enfoque computacional reproducible
+y basado en algoritmos heurísticos permitiría procesar de 
 manera eficiente decenas de horas de grabaciones, discriminando 
 eventos de interés (cantos de Colines) de otros sonidos 
-(otro fauna, viento, tráfico) y garantizando resultados 
+(otra fauna, viento, tráfico) y garantizando resultados 
 comparables entre campañas de muestreo.
 
-Por tanto, la presente tesis justifica el desarrollo de un 
-flujo completo que abarque desde la adquisición y sincronización 
-de señales hasta la clasificación automática de cantos y el 
+Los resultados de la presente tesis constituyen un primer paso hacia 
+el desarrollo de un 
+flujo completo que abarque, desde la adquisición y sincronización 
+de señales, hasta la clasificación automática de cantos y el 
 modelado de interacciones acústicas, a fin de superar las 
 limitaciones de los métodos manuales y aportar herramientas 
 robustas para la ecoacústica de anfibios en Cuba y regiones 
@@ -102,7 +103,7 @@ semejantes.
 \label{sec:formulacion_problema}
 
 El presente trabajo se ocupa del procesamiento automático de un 
-conjunto de grabaciones obtenidas en la Reserva de 
+conjunto de grabaciones registradas en la Reserva de 
 la Biosfera “Sierra del Rosario” con el objetivo de 
 caracterizar los cantos de machos de 
 \emph{Eleutherodactylus eileenae} y reconstruir la dinámica de 
@@ -134,7 +135,7 @@ parámetros temporales y espectrales de cada llamado, generando
 un registro estructurado que sirva de base para el análisis de 
 las interacciones acústicas entre machos. Finalmente, dichos 
 registros se emplearán para inferir un modelo de red de 
-interacción inspirado en el modelo de Ising, con el fin de 
+interacción inspirado en el modelo de  \cite{ising1925beitrag}, con el fin de 
 describir y cuantificar la sincronización y causalidad presentes 
 en el coro.
 
@@ -168,7 +169,7 @@ micrófono más próximo, combinada con criterios de similitud
 espectral, permitirá etiquetar con un alto grado de 
 exactitud los cantos de cada macho, validado mediante muestreo 
 manual de sub-conjuntos de datos. 
-Tambien que una vez extraídas las secuencias temporales de cantos para 
+También se piensa que una vez extraídas las secuencias temporales de cantos para 
 cada individuo, la inferencia de los parámetros de interacción 
 \(J_{ij}\) en un modelo de Ising estimará la probabilidad de 
 co-emisión con una precisión suficiente para reproducir las 
@@ -206,10 +207,10 @@ Para ello se plantean los siguientes objetivos específicos:
       \item Evaluar la consistencia de los algoritmos de detección y asignación.
       \item Comparar el rendimiento de los algoritmos diseñados.
     \end{itemize}
-  \item \textbf{Inferir modelo de interacciones acústicas:}  
+  \item \textbf{Inferir un modelo de interacciones acústicas:}  
     \begin{itemize}
       \item Formular la red de interacciones como un modelo de Ising con parámetros \(J_{ij}\) que cuantifiquen la co-emisión.  
-      \item Estimar los \(J_{ij}\) mediante el Principio de Máxima Verosimilitud y algoritmos de descenso por gradiente.
+      \item Estimar los \(J_{ij}\) mediante el Principio de Máxima Verosimilitud \cite{fisher1912maximum} y algoritmos de descenso por gradiente.
       \item Evaluar la idoneidad del modelo de Ising mediante una comparación con el modelo Independiente en cuanto a su capacidad para predecir los patrones de cantos.
     \end{itemize}
 \end{enumerate}
@@ -255,8 +256,9 @@ detección y
 clasificación de llamadas bioacústicas, con especial énfasis 
 en métodos de sincronización y filtrado de señales. 
 El Capítulo 2 detalla la metodología empleada: adquisición y 
-preprocesamiento de las grabaciones, algoritmos heurísticos 
-para la detección de los “Colines” y la asignación de cada 
+preprocesamiento de las grabaciones, tanto el diseño de 
+algoritmos heurísticos 
+para la detección de los “Colines” como la asignación de cada 
 canto a su emisor, y la formulación del modelo de interacciones 
 basado en Ising con inferencia por máxima verosimilitud y 
 descenso por gradiente. En el Capítulo 3 se presentan los 
