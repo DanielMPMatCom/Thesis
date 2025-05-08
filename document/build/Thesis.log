@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  5 MAY 2025 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  7 MAY 2025 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -764,7 +764,7 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported  on input line 13.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
- (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Dedication.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Thanks.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Abstract.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Contents.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Introduction.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Background.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Methods.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Results.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Conclusions.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Bibliography.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Glossary.aux))
+ (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Dedication.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Thanks.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Abstract.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Contents.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Introduction.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Background.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Methods.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Results.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Conclusions.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Recomendations.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Bibliography.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Glossary.aux))
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -997,7 +997,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--52
 
 
 ]
-<Graphics/colin.jpg, id=140, 338.76563pt x 226.59656pt>
+<Graphics/colin.jpg, id=144, 338.76563pt x 226.59656pt>
 File: Graphics/colin.jpg Graphic file (type jpg)
 <use Graphics/colin.jpg>
 Package pdftex.def Info: Graphics/colin.jpg  used on input line 55.
@@ -1012,7 +1012,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1}) h
                                                   \__shipout_drop_firstpage_...
 l.80 
      {C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./Graphics/colin.jpg>]
-<Graphics/mic_map.jpg, id=153, 1284.8pt x 722.7pt>
+<Graphics/mic_map.jpg, id=157, 1284.8pt x 722.7pt>
 File: Graphics/mic_map.jpg Graphic file (type jpg)
 <use Graphics/mic_map.jpg>
 Package pdftex.def Info: Graphics/mic_map.jpg  used on input line 123.
@@ -1023,25 +1023,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
 [11]
 
-LaTeX Info: Redefining \. on input line 177.
-LaTeX Info: Redefining \% on input line 177.
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
 [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.177 
+l.161 
        <./Graphics/mic_map.jpg>]
 
-LaTeX Info: Redefining \. on input line 207.
-LaTeX Info: Redefining \% on input line 207.
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
 [13]
 
-LaTeX Info: Redefining \. on input line 272.
-LaTeX Info: Redefining \% on input line 272.
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
 [14])
 
 LaTeX Info: Redefining \. on input line 75.
@@ -1051,9 +1051,6 @@ LaTeX Info: Redefining \% on input line 75.
 
  (MainMatter/Background.tex
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Citation `towsey2014use' on page 16 undefined on input line 34.
-
 
 
 [16
@@ -1080,17 +1077,17 @@ LaTeX Info: Redefining \% on input line 259.
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 289.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 290.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.82538pt
-(hyperref)                removed on input line 289.
+(hyperref)                removed on input line 290.
 
 
 
-LaTeX Info: Redefining \. on input line 307.
-LaTeX Info: Redefining \% on input line 307.
+LaTeX Info: Redefining \. on input line 308.
+LaTeX Info: Redefining \% on input line 308.
 [21])
 
 LaTeX Info: Redefining \. on input line 76.
@@ -1150,6 +1147,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 ]
+\openout2 = `BackMatter/Recomendations.aux'.
+
+ (BackMatter/Recomendations.tex)
+
+[26
+
+
+
+
+]
 \openout2 = `BackMatter/Bibliography.aux'.
 
  (BackMatter/Bibliography.tex (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.bbl (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.brf)
@@ -1158,7 +1165,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[26
+[27
 
 
 
@@ -1167,19 +1174,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
-[27]
+[28]
 
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
-[28]
+[29]
 
 LaTeX Info: Redefining \. on input line 235.
 LaTeX Info: Redefining \% on input line 235.
-[29]))
+[30]))
 
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
-[30]
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+[31]
 \openout2 = `BackMatter/Glossary.aux'.
 
 
@@ -1189,30 +1196,26 @@ LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
- (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Dedication.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Thanks.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Abstract.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Contents.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Introduction.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Background.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Methods.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Results.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Conclusions.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Bibliography.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Glossary.aux))
+ (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Dedication.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Thanks.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Abstract.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Contents.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Introduction.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Background.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Methods.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Results.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Conclusions.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Recomendations.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Bibliography.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Glossary.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `Thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 75393946380A64C7BD04DEBCF368D53F;3006.
+(rerunfilecheck)             Checksum: 8FFF2DC90F46A61BA2BC3836D1862E64;3023.
  ) 
 Here is how much of TeX's memory you used:
- 27980 strings out of 473522
- 520668 string characters out of 5713158
+ 28015 strings out of 473522
+ 522101 string characters out of 5713158
  1056912 words of memory out of 5000000
- 50480 multiletter control sequences out of 15000+600000
+ 50504 multiletter control sequences out of 15000+600000
  621720 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,107p,832b,802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (30 pages, 542315 bytes).
+Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (31 pages, 545150 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

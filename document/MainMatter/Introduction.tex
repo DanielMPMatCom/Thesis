@@ -64,7 +64,7 @@ se puede encontrar una breve grabación de su canto y otros datos relevantes.\\
 La ecoacústica ha evolucionado desde la grabación pasiva hasta flujos computacionales 
 que automatizan la detección de llamadas en ambientes ruidosos 
 \cite{acevedo2009automated,blumstein2011acoustic}. Sin embargo, en Cuba pocos estudios 
-han integrado estas técnicas con modelos de interacción estadística.
+han integrado estas técnicas con modelos de interacción y causalidad.
 
 El análisis manual de grabaciones de campo resulta lento, 
 costoso y propenso a errores humanos, lo que limita la escala y 
@@ -125,19 +125,26 @@ deseadas. En la Figura \ref{fig:map} se muestra la distribución geográfica de 
     \label{fig:map}
 \end{figure}
 
-En este ámbito, el problema central consiste en diseñar un flujo 
-heurístico que permita sincronizar con precisión las 
-nueve pistas de audio, detectar de forma fiable los instantes en 
-que cada macho emite su canto (denominado “Colín”) y asignar 
-cada evento al micrófono, y por ende al individuo, 
-correspondiente. A partir de esta información, se busca extraer 
-parámetros temporales y espectrales de cada llamado, generando 
-un registro estructurado que sirva de base para el análisis de 
-las interacciones acústicas entre machos. Finalmente, dichos 
-registros se emplearán para inferir un modelo de red de 
-interacción inspirado en el modelo de  \cite{ising1925beitrag}, con el fin de 
-describir y cuantificar la sincronización y causalidad presentes 
-en el coro.
+En este ámbito, el problema central consiste en el diseño de 
+un flujo heurístico 
+capaz de sincronizar con precisión las nueve pistas de audio, 
+detectar de manera fiable los instantes de emisión de cada 
+canto (“Colín”) y asignar cada evento al micrófono (y por tanto 
+al individuo) correspondiente; a partir de ello, se extraen 
+parámetros temporales y espectrales de cada llamado para 
+generar un registro estructurado que sirve de base a la 
+inferencia de una red de interacción inspirada en el modelo de 
+Ising \cite{ising1925beitrag}. Se espera que la sincronización 
+automática alcance una resolución temporal tal que permita 
+distinguir llamadas superpuestas de machos vecinos, y que la 
+combinación de criterios de proximidad y similitud espectral 
+garantice una alta exactitud en la etiqueta de cada canto, 
+validada mediante muestreo manual. Finalmente, las secuencias 
+temporales resultantes se emplean para estimar los parámetros 
+de interacción \(J_{ij}\), de modo que el modelo reproduzca 
+con fidelidad las correlaciones de co-emisión observadas en el 
+coro.  
+
 
 La complejidad del problema reside en la superposición de 
 señales y en la variabilidad del nivel de ruido ambiental, lo 
@@ -150,9 +157,9 @@ futuros estudios bioacústicos. Este estudio es el primero en
 Cuba en aplicar el modelo de Ising para describir 
 interacciones acústicas en coros de anuros, siguiendo 
 aproximaciones similares en redes 
-neuronales y colonias de insectos \cite{schneidman2006weak,mora2011biological,bialek2012biophysics,reyes2019transmission}.
+neuronales y colonias de insectos \cite{schneidman2006weak,mora2011biological,bialek2012biophysics,reyes2019transmission,ising1925beitrag}.
 
-\section{Hipótesis de partida}
+\section{Hipótesis}
 \label{sec:hipotesis}
 
 Se plantea como hipótesis principal que un flujo computacional 
@@ -160,23 +167,10 @@ basado en algoritmos heurísticos para la sincronización,
 detección y clasificación de cantos de Colines podrá reproducir con un alto 
 grado de fidelidad las secuencias de emisión de cada individuo 
 y, a partir de ellas, inferir las interacciones acústicas 
-subyacentes a la formación de coros. En concreto, se espera 
-que el proceso de sincronización automática de las nueve 
-pistas de audio alcance una precisión temporal suficiente para 
-diferenciar llamadas superpuestas de individuos vecinos. 
-Además se supone que la asignación de cada evento acústico al 
-micrófono más próximo, combinada con criterios de similitud 
-espectral, permitirá etiquetar con un alto grado de 
-exactitud los cantos de cada macho, validado mediante muestreo 
-manual de sub-conjuntos de datos. 
-También se piensa que una vez extraídas las secuencias temporales de cantos para 
-cada individuo, la inferencia de los parámetros de interacción 
-\(J_{ij}\) en un modelo de Ising estimará la probabilidad de 
-co-emisión con una precisión suficiente para reproducir las 
-correlaciones observadas en la red real de coros.  
+subyacentes a la formación de coros. 
 
 
-En conjunto, estas hipótesis de partida fundamentan la 
+Esto fundamenta la 
 viabilidad de un enfoque computacional replicable y escalable 
 que, aplicado a los cantos de Colines, aporte 
 nuevas perspectivas cuantitativas sobre la dinámica de los coros 
@@ -223,31 +217,34 @@ Para dar respuesta al problema planteado, se propone un
 flujo de trabajo modular que integre cuatro etapas principales: 
 sincronización, filtrado, asignación de 
 emisores y modelado de interacciones. En primer lugar, la 
-sincronización de las nueve pistas de audio se realizará 
+sincronización de las nueve pistas de audio se realiza 
 mediante la aplicación de correlación cruzada sobre los histogramas
 de distribución de distancias temporales entre los picos de energía de los audios 
 y un punto de referencia. A continuación, se 
-aplicará un filtro que consiste en una poda espectral
+aplica un filtro que consiste en una poda espectral
 basada en el percentil 99.9 de la amplitud por frecuencia.
 Con ello se busca atenuar 
 ruido de baja (viento, tráfico) y alta frecuencia (insectos).  
 
-En la tercera fase se asignará cada 
+En la tercera fase se asigna cada 
 llamado al micrófono más adecuado mediante heurísticas de 
 intensidad relativa. 
 Finalmente, la información temporal y espectral extraída de cada 
-evento servirá para construir un grafo de interacciones, 
+evento sirve para construir un grafo de interacciones, 
 modelado con un enfoque de máxima verosimilitud en un sistema 
 análogo al modelo de Ising. El ajuste de los 
-parámetros \(J_{ij}\) se llevará a cabo mediante un algoritmo de 
+parámetros \(J_{ij}\) se lleva a cabo mediante un algoritmo de 
 descenso por gradiente.  
 
 Este flujo, además de automatizar completamente la extracción de 
-datos, permitirá validar la hipótesis de partida mediante 
-métricas objetivas de precisión y reproducibilidad, y ofrecerá 
+datos, permite validar la hipótesis mediante 
+métricas objetivas de precisión y reproducibilidad, y ofrece 
 una herramienta extensible a otros sistemas de ecoacústica con 
 configuraciones similares.  
 
+
+\section{Estructura del Documento}
+\label{sec:estructura_documento}
 
 Para explicar la solución propuesta y el flujo de trabajo, 
 se diseñó la siguiente estructura del presente documento. 
@@ -265,10 +262,15 @@ descenso por gradiente. En el Capítulo 3 se presentan los
 resultados: evaluación de la precisión de 
 sincronización, rendimiento de los detectores de canto, 
 exactitud de la asignación micrófono-Colín y análisis de las 
-interacciones inferidas \(\{J_{ij}\}\). Finalmente, en las 
+interacciones inferidas \(\{J_{ij}\}\). Además en las 
 Conclusiones se discuten las aportaciones principales, las 
-implicaciones ecológicas y computacionales, las limitaciones 
-del estudio y las líneas de investigación futura.  
+implicaciones ecológicas y computacionales y las limitaciones 
+del estudio.
+Finalmente, en las Recomendaciones se presentarán sugerencias 
+generales basadas en los resultados, destinadas a 
+orientar mejoras metodológicas, proponer nuevas líneas de 
+investigación y facilitar la aplicación práctica del enfoque 
+desarrollado en estudios futuros.  
 
 % -----------------------------------------------------------------------
 

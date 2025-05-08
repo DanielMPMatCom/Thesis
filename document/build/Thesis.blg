@@ -19,6 +19,8 @@ Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: MainMatter/Results.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: BackMatter/Conclusions.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: BackMatter/Recomendations.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: BackMatter/Bibliography.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
@@ -57,45 +59,45 @@ Warning--I didn't find a database entry for "Lisp1990"
 Warning--I didn't find a database entry for "Lisp2006"
 Warning--I didn't find a database entry for "CLOS"
 Warning--I didn't find a database entry for "Data"
-You've used 43 entries,
+You've used 44 entries,
             2118 wiz_defined-function locations,
-            836 strings with 13174 characters,
-and the built_in function-call counts, 14921 in all, are:
-= -- 1469
-> -- 778
+            842 strings with 13397 characters,
+and the built_in function-call counts, 15313 in all, are:
+= -- 1508
+> -- 801
 < -- 4
-+ -- 317
-- -- 266
-* -- 1134
-:= -- 2561
-add.period$ -- 131
-call.type$ -- 43
-change.case$ -- 258
++ -- 327
+- -- 274
+* -- 1166
+:= -- 2628
+add.period$ -- 134
+call.type$ -- 44
+change.case$ -- 265
 chr.to.int$ -- 0
-cite$ -- 43
-duplicate$ -- 490
-empty$ -- 1075
-format.name$ -- 266
-if$ -- 3003
+cite$ -- 44
+duplicate$ -- 501
+empty$ -- 1101
+format.name$ -- 274
+if$ -- 3080
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 41
-newline$ -- 220
-num.names$ -- 86
-pop$ -- 207
+int.to.str$ -- 44
+missing$ -- 42
+newline$ -- 225
+num.names$ -- 88
+pop$ -- 212
 preamble$ -- 1
-purify$ -- 217
+purify$ -- 223
 quote$ -- 0
-skip$ -- 346
+skip$ -- 353
 stack$ -- 0
-substring$ -- 1006
-swap$ -- 73
+substring$ -- 1037
+swap$ -- 74
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 170
+type$ -- 174
 warning$ -- 0
-while$ -- 151
-width$ -- 45
-write$ -- 473
+while$ -- 155
+width$ -- 46
+write$ -- 484
 (There were 30 warnings)

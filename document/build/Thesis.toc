@@ -3,12 +3,13 @@
 \contentsline {chapter}{Introducción}{9}{chapter*.6}%
 \contentsline {section}{\numberline {0.1}Motivación y justificación}{10}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Formulación del problema}{11}{section.0.2}%
-\contentsline {section}{\numberline {0.3}Hipótesis de partida}{13}{section.0.3}%
+\contentsline {section}{\numberline {0.3}Hipótesis}{13}{section.0.3}%
 \contentsline {section}{\numberline {0.4}Objetivos}{13}{section.0.4}%
 \contentsline {section}{\numberline {0.5}Propuesta de solución}{14}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Estructura del Documento}{14}{section.0.6}%
 \contentsline {chapter}{\numberline {1}Antecedentes}{16}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Detección de individuos en grabaciones}{17}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Métodos clásicos de clasificación de señales}{17}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Métodos clásicos de clasificación de señales acústicas}{17}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Localización y asignación de fuentes}{18}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Análisis de coros y comportamiento grupal}{18}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Patrones de formación de coros}{19}{subsection.1.2.1}%
@@ -29,5 +30,6 @@
 \contentsline {section}{\numberline {3.3}Comparación entre algoritmos heurísticos}{24}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{24}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Idoneidad del modelo de Ising}{24}{section.3.5}%
-\contentsline {chapter}{Conclusiones y Recomendaciones}{25}{chapter*.7}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{26}{chapter*.8}%
+\contentsline {chapter}{Conclusiones}{25}{chapter*.7}%
+\contentsline {chapter}{Recomendaciones}{26}{chapter*.8}%
+\contentsline {chapter}{Referencias Bibliográficas}{27}{chapter*.9}%

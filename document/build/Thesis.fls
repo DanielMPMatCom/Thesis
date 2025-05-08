@@ -333,6 +333,9 @@ INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Resu
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Conclusions.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Conclusions.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Conclusions.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Recomendations.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Recomendations.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Recomendations.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibliography.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibliography.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibliography.aux
@@ -608,6 +611,12 @@ OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Con
 INPUT .\BackMatter\Conclusions.tex
 INPUT .\BackMatter\Conclusions.tex
 INPUT BackMatter\Conclusions.tex
+INPUT .\BackMatter\Recomendations.tex
+INPUT .\BackMatter\Recomendations.tex
+OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Recomendations.aux
+INPUT .\BackMatter\Recomendations.tex
+INPUT .\BackMatter\Recomendations.tex
+INPUT BackMatter\Recomendations.tex
 INPUT .\BackMatter\Bibliography.tex
 INPUT .\BackMatter\Bibliography.tex
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibliography.aux
@@ -652,6 +661,9 @@ INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Resu
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Conclusions.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Conclusions.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Conclusions.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Recomendations.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Recomendations.aux
+INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Recomendations.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibliography.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibliography.aux
 INPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter\Bibliography.aux
