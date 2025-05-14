@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {0.3}Hipótesis}{13}{section.0.3}%
 \contentsline {section}{\numberline {0.4}Objetivos}{13}{section.0.4}%
 \contentsline {section}{\numberline {0.5}Propuesta de solución}{14}{section.0.5}%
-\contentsline {section}{\numberline {0.6}Estructura del Documento}{14}{section.0.6}%
+\contentsline {section}{\numberline {0.6}Estructura del Documento}{15}{section.0.6}%
 \contentsline {chapter}{\numberline {1}Antecedentes}{16}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Detección de individuos en grabaciones}{17}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Métodos clásicos de clasificación de señales acústicas}{17}{subsection.1.1.1}%
@@ -19,17 +19,22 @@
 \contentsline {subsection}{\numberline {1.3.2}Técnicas de inferencia de causalidad}{21}{subsection.1.3.2}%
 \contentsline {section}{\numberline {1.4}Antecedentes específicos en \emph {E.\,eileenae}}{21}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Métodos}{23}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Adquisición de las grabaciones y características del dataset}{23}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Sincronización de señales}{23}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Filtrado de ruido de fondo}{23}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Detección y asignación heurística de “Colines”}{23}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Modelado de interacciones con el modelo de Ising}{23}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Resultados e Interpretación}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Evaluación de la sincronización}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Exactitud de la detección y asignación micrófono-Colín}{24}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Comparación entre algoritmos heurísticos}{24}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Idoneidad del modelo de Ising}{24}{section.3.5}%
-\contentsline {chapter}{Conclusiones}{25}{chapter*.7}%
-\contentsline {chapter}{Recomendaciones}{26}{chapter*.8}%
-\contentsline {chapter}{Referencias Bibliográficas}{27}{chapter*.9}%
+\contentsline {section}{\numberline {2.1}Representación de audios con Mel-espectrogramas}{25}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sincronización de los audios}{26}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Filtrado de ruido de fondo}{28}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Detección y asignación heurística de cantos de Colines a Micrófonos}{29}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Algoritmo basado en hipótesis de energías relativas}{30}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Algoritmo basado en hipótesis de comportamiento}{31}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Modelado de interacciones con el modelo de Ising}{31}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Fundamentos del modelo de Ising}{32}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Formulación del sistema acústico como red de espines}{33}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Inferencia por máxima verosimilitud y descenso por gradiente}{33}{subsection.2.5.3}%
+\contentsline {chapter}{\numberline {3}Resultados e Interpretación}{36}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Evaluación de la sincronización}{36}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Exactitud de la detección y asignación micrófono-Colín}{36}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Comparación entre algoritmos heurísticos}{36}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{36}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Idoneidad del modelo de Ising}{36}{section.3.5}%
+\contentsline {chapter}{Conclusiones}{37}{chapter*.7}%
+\contentsline {chapter}{Recomendaciones}{38}{chapter*.8}%
+\contentsline {chapter}{Referencias Bibliográficas}{39}{chapter*.9}%

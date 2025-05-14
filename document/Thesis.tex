@@ -1,7 +1,7 @@
 \documentclass[11pt,oneside]{uhthesis}
 %\documentclass[11pt,oneside]{report}
 \usepackage{subfigure}
-\usepackage[linesnumbered,lined,titlenumbered,ruled]{algorithm2e}
+% \usepackage[linesnumbered,lined,titlenumbered,ruled]{algorithm2e}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsbsy}
@@ -11,6 +11,7 @@
 \setlength {\marginparwidth }{3cm}
 \usepackage{todonotes}
 \usepackage{bookmark}
+\usepackage{soul}
 
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
@@ -25,6 +26,9 @@
 \restylefloat{table}
 \usepackage{listings}
 \usepackage{color}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.2,0,0}
@@ -47,7 +51,7 @@
 }
 
 \renewcommand{\tablename}{Tabla}
-\title{Título de la tesis}
+\title{Análisis Computacional de Coros de \emph{Eleutherodactylus eileenae}: Inferencia de Redes desde Señales Bioacústicas}
 \author{Daniel Machado Pérez}
 \advisor{\\\vspace{0.25cm}Dr. Roberto Mulet Genicio\\\vspace{0.25cm}Dr. Milton García Borroto}
 \degree{Licenciado en Ciencia de la Computación}

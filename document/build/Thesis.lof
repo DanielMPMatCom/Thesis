@@ -4,4 +4,10 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Distribución Geográfica de los Micrófonos.}}{12}{figure.0.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mel-espectrograma de un fragmento del audio \texttt {20231021\_190000h}, donde se observan las notas “CO” (baja frecuencia) y “LIN” (alta frecuencia).}}{26}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Energía temporal del audio \texttt {20231021\_190000h}.}}{27}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Momentos de pico de energía de un fragmento de los audios del \texttt {20231021\_190000} antes de sincronizar.}}{27}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Momentos de pico de energía de un fragmento de los audios del \texttt {20231021\_190000} después de sincronizar.}}{28}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mel-espectrograma del fragmento de audio en que aparece el ruido de un motor de automóvil.}}{29}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Esquema de ejecución del Algoritmo basado en energías relativas.}}{32}{figure.2.6}%
 \addvspace {10\p@ }

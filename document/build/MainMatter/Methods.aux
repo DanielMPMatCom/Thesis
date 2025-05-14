@@ -3,40 +3,82 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Métodos}{23}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{chapter:Methods}{{2}{23}{Métodos}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Adquisición de las grabaciones y características del dataset}{23}{section.2.1}\protected@file@percent }
-\newlabel{sec:dataset}{{2.1}{23}{Adquisición de las grabaciones y características del dataset}{section.2.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Sincronización de señales}{23}{section.2.2}\protected@file@percent }
-\newlabel{sec:sincronizacion}{{2.2}{23}{Sincronización de señales}{section.2.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Filtrado de ruido de fondo}{23}{section.2.3}\protected@file@percent }
-\newlabel{sec:filtrado}{{2.3}{23}{Filtrado de ruido de fondo}{section.2.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Detección y asignación heurística de “Colines”}{23}{section.2.4}\protected@file@percent }
-\newlabel{sec:deteccion_asignacion}{{2.4}{23}{Detección y asignación heurística de “Colines”}{section.2.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Modelado de interacciones con el modelo de Ising}{23}{section.2.5}\protected@file@percent }
-\newlabel{sec:modelado_ising}{{2.5}{23}{Modelado de interacciones con el modelo de Ising}{section.2.5}{}}
+\citation{hill2018audiomoth}
+\citation{zhang2021acoustic}
+\citation{zhang2021acoustic}
+\citation{alonso2001llamadas}
+\@writefile{brf}{\backcite{hill2018audiomoth}{{25}{2}{chapter.2}}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Representación de audios con Mel-espectrogramas}{25}{section.2.1}\protected@file@percent }
+\newlabel{sec:mel_spectrogramas}{{2.1}{25}{Representación de audios con Mel-espectrogramas}{section.2.1}{}}
+\@writefile{brf}{\backcite{zhang2021acoustic}{{25}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{zhang2021acoustic}{{25}{2.1}{section.2.1}}}
+\@writefile{brf}{\backcite{alonso2001llamadas}{{25}{2.1}{section.2.1}}}
+\citation{jurafskyspeech}
+\citation{scipy-signal}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Mel-espectrograma de un fragmento del audio \texttt  {20231021\_190000h}, donde se observan las notas “CO” (baja frecuencia) y “LIN” (alta frecuencia).}}{26}{figure.2.1}\protected@file@percent }
+\newlabel{fig:mel_example}{{2.1}{26}{Mel-espectrograma de un fragmento del audio \texttt {20231021\_190000h}, donde se observan las notas “CO” (baja frecuencia) y “LIN” (alta frecuencia)}{figure.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Sincronización de los audios}{26}{section.2.2}\protected@file@percent }
+\newlabel{sec:sincronizacion}{{2.2}{26}{Sincronización de los audios}{section.2.2}{}}
+\newlabel{energyformula}{{2.1}{26}{Sincronización de los audios}{equation.2.1}{}}
+\@writefile{brf}{\backcite{jurafskyspeech}{{26}{2.2}{equation.2.1}}}
+\citation{costa2021comparing}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Energía temporal del audio \texttt  {20231021\_190000h}.}}{27}{figure.2.2}\protected@file@percent }
+\newlabel{fig:energy}{{2.2}{27}{Energía temporal del audio \texttt {20231021\_190000h}}{figure.2.2}{}}
+\@writefile{brf}{\backcite{scipy-signal}{{27}{2.2}{figure.2.2}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Momentos de pico de energía de un fragmento de los audios del \texttt  {20231021\_190000} antes de sincronizar.}}{27}{figure.2.3}\protected@file@percent }
+\newlabel{fig:peaks}{{2.3}{27}{Momentos de pico de energía de un fragmento de los audios del \texttt {20231021\_190000} antes de sincronizar}{figure.2.3}{}}
+\@writefile{brf}{\backcite{costa2021comparing}{{27}{2.2}{figure.2.3}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Momentos de pico de energía de un fragmento de los audios del \texttt  {20231021\_190000} después de sincronizar.}}{28}{figure.2.4}\protected@file@percent }
+\newlabel{fig:peaksafter}{{2.4}{28}{Momentos de pico de energía de un fragmento de los audios del \texttt {20231021\_190000} después de sincronizar}{figure.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Filtrado de ruido de fondo}{28}{section.2.3}\protected@file@percent }
+\newlabel{sec:filtrado}{{2.3}{28}{Filtrado de ruido de fondo}{section.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Mel-espectrograma del fragmento de audio en que aparece el ruido de un motor de automóvil.}}{29}{figure.2.5}\protected@file@percent }
+\newlabel{fig:car}{{2.5}{29}{Mel-espectrograma del fragmento de audio en que aparece el ruido de un motor de automóvil}{figure.2.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Detección y asignación heurística de cantos de Colines a Micrófonos}{29}{section.2.4}\protected@file@percent }
+\newlabel{sec:deteccion_asignacion}{{2.4}{29}{Detección y asignación heurística de cantos de Colines a Micrófonos}{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Algoritmo basado en hipótesis de energías relativas}{30}{subsection.2.4.1}\protected@file@percent }
+\newlabel{sec:alg_energia}{{2.4.1}{30}{Algoritmo basado en hipótesis de energías relativas}{subsection.2.4.1}{}}
+\citation{ising1925beitrag}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Colin Sequence by Energy}}{31}{algorithm.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Algoritmo basado en hipótesis de comportamiento}{31}{subsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Modelado de interacciones con el modelo de Ising}{31}{section.2.5}\protected@file@percent }
+\newlabel{sec:modelado_ising}{{2.5}{31}{Modelado de interacciones con el modelo de Ising}{section.2.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Esquema de ejecución del Algoritmo basado en energías relativas.}}{32}{figure.2.6}\protected@file@percent }
+\newlabel{fig:algorithm}{{2.6}{32}{Esquema de ejecución del Algoritmo basado en energías relativas}{figure.2.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Fundamentos del modelo de Ising}{32}{subsection.2.5.1}\protected@file@percent }
+\@writefile{brf}{\backcite{ising1925beitrag}{{32}{2.5.1}{subsection.2.5.1}}}
+\citation{chau2017inverse}
+\citation{zeng2013maximum}
+\@writefile{brf}{\backcite{chau2017inverse}{{33}{2.5.1}{subsection.2.5.1}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Formulación del sistema acústico como red de espines}{33}{subsection.2.5.2}\protected@file@percent }
+\@writefile{brf}{\backcite{zeng2013maximum}{{33}{2.5.2}{subsection.2.5.2}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Inferencia por máxima verosimilitud y descenso por gradiente}{33}{subsection.2.5.3}\protected@file@percent }
+\citation{pena2001deduccion}
+\@writefile{brf}{\backcite{pena2001deduccion}{{34}{2.5.3}{subsection.2.5.3}}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Gradient Descent for Ising Model Parameter Inference}}{35}{algorithm.2}\protected@file@percent }
 \@setckpt{MainMatter/Methods}{
-\setcounter{page}{24}
-\setcounter{equation}{0}
-\setcounter{enumi}{3}
+\setcounter{page}{36}
+\setcounter{equation}{3}
+\setcounter{enumi}{4}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{0}
+\setcounter{footnote}{1}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{2}
 \setcounter{section}{5}
-\setcounter{subsection}{0}
+\setcounter{subsection}{3}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
+\setcounter{figure}{6}
 \setcounter{table}{0}
 \setcounter{btxromaniannumeral}{0}
-\setcounter{section@level}{1}
-\setcounter{Item}{3}
-\setcounter{Hfootnote}{1}
+\setcounter{section@level}{2}
+\setcounter{Item}{7}
+\setcounter{Hfootnote}{2}
 \setcounter{bookmark@seq@number}{0}
 \setcounter{theorem}{0}
 \setcounter{definition}{0}
@@ -44,13 +86,17 @@
 \setcounter{lofdepth}{1}
 \setcounter{subtable}{0}
 \setcounter{lotdepth}{1}
-\setcounter{AlgoLine}{0}
-\setcounter{algocfline}{0}
-\setcounter{algocfproc}{0}
-\setcounter{algocf}{0}
 \setcounter{parentequation}{0}
-\setcounter{float@type}{8}
+\setcounter{float@type}{16}
 \setcounter{@todonotes@numberoftodonotes}{0}
 \setcounter{lstnumber}{1}
+\setcounter{algorithm}{2}
+\setcounter{ALG@line}{12}
+\setcounter{ALG@rem}{0}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
 \setcounter{lstlisting}{0}
 }

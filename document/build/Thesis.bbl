@@ -14,6 +14,12 @@ Roberto Alonso, Ariel Rodr{\'\i}guez-G{\'o}mez, and Alberto~R Estrada.
 \newblock {\em Revista espa{\~n}ola de herpetolog{\'\i}a}, 15(2001):45--52,
   2001.
 
+\bibitem{alonso2001llamadas}
+Roberto Alonso~Bosch and Ariel Rodr{\'\i}guez~G{\'o}mez.
+\newblock Llamadas del repertorio vocal de eleutherodactylus eileenae (anura:
+  Leptodactylidae) del occidente de cuba.
+\newblock {\em Cuadernos de Herpetolog{\'\i}a}, 14, 2001.
+
 \bibitem{bialek2012biophysics}
 William Bialek.
 \newblock {\em Biophysics: searching for principles}.
@@ -129,10 +135,22 @@ Clive~WJ Granger.
 \newblock {\em Econometrica: journal of the Econometric Society}, pages
   424--438, 1969.
 
+\bibitem{hill2018audiomoth}
+Andrew~P Hill, Peter Prince, Evelyn Pi{\~n}a~Covarrubias, C~Patrick Doncaster,
+  Jake~L Snaddon, and Alex Rogers.
+\newblock Audiomoth: Evaluation of a smart open acoustic device for monitoring
+  biodiversity and the environment.
+\newblock {\em Methods in Ecology and Evolution}, 9(5):1199--1211, 2018.
+
 \bibitem{ising1925beitrag}
 Ernst Ising.
 \newblock Beitrag zur theorie des ferromagnetismus.
 \newblock {\em Zeitschrift f{\"u}r Physik}, 31(1):253--258, 1925.
+
+\bibitem{jurafskyspeech}
+Daniel Jurafsky and James~H Martin.
+\newblock Speech and language processing: An introduction to natural language
+  processing, computational linguistics, and speech recognition.
 
 \bibitem{kalra2024signal}
 Lata Kalra.
@@ -157,6 +175,12 @@ Kaiichiro Ota, Ikkyu Aihara, and Toshio Aoyagi.
 \newblock Interaction mechanisms quantified from dynamical features of frog
   choruses.
 \newblock {\em Royal Society open science}, 7(3):191693, 2020.
+
+\bibitem{pena2001deduccion}
+Daniel Pe{\~n}a S{\'a}nchez~de Rivera.
+\newblock Deducci{\'o}n de distribuciones: el m{\'e}todo de monte carlo.
+\newblock {\em Fundamentos de Estad{\'\i}stica. Alianza Editorial, Madrid. pp},
+  pages 220--300, 2001.
 
 \bibitem{pieretti2011new}
 Nadia Pieretti, Almo Farina, and Davide Morri.
@@ -238,6 +262,18 @@ Michael Towsey, Jason Wimmer, Ian Williamson, and Paul Roe.
 \newblock The use of acoustic indices to determine avian species richness in
   audio-recordings of the environment.
 \newblock {\em Ecological Informatics}, 21:110--119, 2014.
+
+\bibitem{scipy-signal}
+Pauli Virtanen, Ralf Gommers, Travis Oliphant, Matt Haberland, Tyler Reddy,
+  David Cournapeau, Evgeni Burovski, Pearu Peterson, Warren Weckesser, Jonathan
+  Bright, St\u00e9fan van~der Walt, Matthew Brett, Joshua Wilson, K.~Jarrod
+  Millman, Nikolay Mayorov, Andrew~R. Nelson, Eric Jones, Robert Kern, Eric
+  Larson, CJ~Carey, İbrahim Polat, Yu~Feng, Eric~W. Moore, Jake Vand~erPlas,
+  Damien Laxalde, Josef Perktold, Robert Cimrman, Ian Henriksen, José
+  Quintero, Charles~R. Harris, Anne~M. Archibald, António~H. Ribeiro, Fabian
+  Pedregosa, Paul van Mulbregt, and SciPy~1.0 Contributors.
+\newblock Scipy signal processing (scipy.signal).
+\newblock \url{https://docs.scipy.org/doc/scipy/reference/signal.html}, 2020.
 
 \bibitem{woolbright1985patterns}
 Lawrence~L Woolbright.
