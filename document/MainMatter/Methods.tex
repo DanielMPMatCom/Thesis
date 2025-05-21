@@ -129,94 +129,6 @@ claramente los instantes de emisión de la nota baja “CO”
 
 
 
-% region sync
-\section{Sincronización de los audios}
-\label{sec:sincronizacion}
-
-
-La sincronización de las grabaciones de audio constituyó una 
-etapa crítica para asegurar la coherencia temporal necesaria en 
-el análisis posterior de los cantos de \emph{E.\,eileenae}. 
-Aunque los nueve dispositivos de grabación fueron activados 
-simultáneamente, cada uno presentaba desfases mínimos, posiblemente 
-debido a pequeñas variaciones en el hardware y el error de 
-la activación remota, los cuales 
-resultaban significativos para el procesamiento posterior. 
-Para corregir estos 
-desfases, se implementó un procedimiento automático basado en 
-señales de energía derivadas de los Mel-espectrogramas de cada 
-canal.
-
-En primer lugar, se calculó la energía temporal de cada 
-Mel-espectrograma, obteniendo en cada instante \(j\), la suma 
-de los cuadrados de las intensidades en las \(n\) bandas de 
-frecuencia:
-\begin{equation}
-    \label{energyformula}
-    E_j \;=\; \sum_{i=0}^{n} a_{ij}^2 
-    \qquad\forall\,j,
-\end{equation}
-
-donde \(a_{ij}\) es la intensidad en la banda \(i\) y el tiempo 
-\(j\), y \(E_j\) representa la energía total en dicho instante 
-\cite{jurafskyspeech}. 
-En la Figura \ref{fig:energy} se aprecia la evolución de 
-\(E_j\) para el canal “\texttt{20231021\_190000h}”.
-
-
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.9\linewidth]{Graphics/temp_energy.png}
-    \caption{Energía temporal del audio \texttt{20231021\_190000h}.}
-    \label{fig:energy}
-  \end{figure}
-
-A continuación, se detectaron los picos locales de \(E_j\) 
-mediante una función que localiza 
-máximos relativos en una secuencia discreta, ajustando 
-parámetros de prominencia y distancia mínima para evitar falsas 
-detecciones debidas a ruido residual \cite{scipy-signal}. 
-En la Figura\ref{fig:peaks} se muestran los momentos de pico de 
-energía de un fragmento del audio \texttt{20231021\_190000h}.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.9\linewidth]{Graphics/peaks_before.png}
-    \caption{Momentos de pico de energía de un fragmento de los audios del \texttt{20231021\_190000} antes de sincronizar.}
-    \label{fig:peaks}
-  \end{figure}
-
-Para estimar los desfases entre canales, se construyó un 
-histograma de los tiempos de pico de cada audio, relativo al 
-inicio de la grabación. Luego, se aplicó correlación cruzada \cite{costa2021comparing} 
-entre los histogramas de pares de canales, desplazando uno 
-respecto al otro y calculando el coeficiente de correlación 
-máxima para cada posible \emph{lag}. 
-Este enfoque permitió identificar el desfase 
-óptimo que maximiza el solapamiento de las estructuras 
-temporales de canto.
-
-Una vez determinados los desfases relativos, se alinearon todos 
-los canales utilizando un canal de referencia global (en este caso, el canal 
-“\texttt{20231021\_190000h}”, que presentaba la señal más limpia) aplicando un 
-desplazamiento de muestras correspondiente al \emph{lag} 
-calculado. La Figura \ref{fig:peaksafter} ilustra los picos de 
-energía tras la alineación, mostrando una coincidencia temporal 
-precisa. Finalmente, estos desfases se incorporaron a 
-los archivos originales, de modo que todos los 
-audios quedaran sincronizados con un error mínimo.
-
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.9\linewidth]{Graphics/peaks_after.png}
-    \caption{Momentos de pico de energía de un fragmento de los audios del \texttt{20231021\_190000} después de sincronizar.}
-    \label{fig:peaksafter}
-  \end{figure}
-
-
-
 
 
 % region noise
@@ -226,43 +138,198 @@ audios quedaran sincronizados con un error mínimo.
 
 Para garantizar que las características acústicas extraídas 
 representaran de manera fidedigna la emisión vocal de los 
-Colines, se implementó una etapa previa de eliminación de 
+Colines, se implementó una etapa de eliminación de 
 ruido dirigida a atenuar tanto interferencias puntuales (por 
 ejemplo, vocalizaciones de otras especies o clics mecánicos) 
 como ruidos persistentes de banda ancha (motores de vehículos, 
 canto de grillos, viento). En la 
 Figura \ref{fig:car} se muestra el Mel-espectrograma de un 
-fragmento en el que se registró el ruido generado por el paso 
+fragmento del audio \texttt{20231021\_190000b}, en el que se registró el ruido generado por el paso 
 de un automóvil cercano.
 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\columnwidth]{Graphics/car_noise.png}
-    \caption{Mel-espectrograma del fragmento de audio en que aparece el ruido de un motor de automóvil.}
+    \includegraphics[width=\columnwidth]{Graphics/car_noise_before.png}
+    \caption{Mel-espectrograma del fragmento del audio \texttt{20231021\_190000b}, en el que aparece el ruido de un motor de automóvil. Antes del filtrado.}
     \label{fig:car}
 \end{figure}
 
-La técnica empleada consistió en una poda espectral basada en 
+La técnica empleada consistió en una poda espectral (o \emph{spectral pruning}) basada en 
 el percentil 99.9 de la amplitud por frecuencia. 
 Para cada grabación se calculó el 
 espectrograma de potencia y, en cada banda de frecuencia, se 
 determinó el valor correspondiente al percentil 99.9 de la 
 amplitud a lo largo de todo el período analizado. 
-A continuación, se aplicó un umbral 
-dinámico que descartó todas las componentes espectrales por 
-debajo de ese nivel, reteniendo solo los eventos acústicos 
+A continuación, se descartaron todas las componentes espectrales 
+por 
+debajo de ese umbral, reteniendo solo los eventos acústicos 
 cuyas intensidades superaron el fondo de ruido común.
+En la Figura \ref{fig:car2} se presenta el Mel-espectrograma
+del mismo fragmento de audio que se muestra en la Figura \ref{fig:car},
+pero luego de aplicar el filtrado.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\columnwidth]{Graphics/car_noise_after.png}
+    \caption{Mel-espectrograma del fragmento del audio \texttt{20231021\_190000b}, en el que se registró el ruido de un motor de automóvil. Después del filtrado.}
+    \label{fig:car2}
+\end{figure}
 
 Este procedimiento permitió suprimir eficazmente las 
 componentes de baja energía asociadas al ruido ambiental no 
 informativo y conservar las estructuras espectrales dominantes 
-de los cantos de \emph{E.\,eileenae}. 
-De esta forma, el flujo de detección heurística se alimentó de 
-señales con un cociente señal-ruido significativamente mejorado, 
-requisito indispensable para la posterior identificación 
-precisa de los instantes de emisión de los “Colines” y la 
-asignación a cada micrófono.  
+de los cantos de \emph{E.\,eileenae}.
+
+
+
+
+% region sync
+% \section{Sincronización de los audios}
+% \label{sec:sincronizacion}
+
+
+% La sincronización de las grabaciones de audio constituyó una 
+% etapa crítica para asegurar la coherencia temporal necesaria en 
+% el análisis posterior de los cantos de \emph{E.\,eileenae}. 
+% Aunque los nueve dispositivos de grabación fueron activados 
+% simultáneamente, cada uno presentaba desfases mínimos, posiblemente 
+% debido a pequeñas variaciones en el hardware y el error de 
+% la activación remota, los cuales 
+% resultaban significativos para el procesamiento posterior. 
+% Para corregir estos 
+% desfases, se implementó un procedimiento automático basado en 
+% señales de energía derivadas de los Mel-espectrogramas de cada 
+% canal.
+
+% En primer lugar, se calculó la energía temporal de cada 
+% Mel-espectrograma, obteniendo en cada instante \(j\), la suma 
+% de los cuadrados de las intensidades en las \(n\) bandas de 
+% frecuencia:
+% \begin{equation}
+%     \label{energyformula}
+%     E_j \;=\; \sum_{i=0}^{n} a_{ij}^2 
+%     \qquad\forall\,j,
+% \end{equation}
+% donde \(a_{ij}\) es la intensidad en la banda \(i\) y el tiempo 
+% \(j\), y \(E_j\) representa la energía total en dicho instante 
+% \cite{jurafskyspeech}. 
+% En la Figura \ref{fig:energy} se aprecia la evolución de 
+% \(E_j\) para el canal “\texttt{20231021\_190000h}”.
+
+
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{Graphics/temp_energy.png}
+%     \caption{Energía temporal del audio \texttt{20231021\_190000h}.}
+%     \label{fig:energy}
+%   \end{figure}
+
+% A continuación, se detectaron los picos locales de \(E_j\) 
+% mediante una función que localiza 
+% máximos relativos en una secuencia discreta, ajustando 
+% parámetros de prominencia y distancia mínima para evitar falsas 
+% detecciones debidas a ruido residual \cite{scipy-signal}. 
+% En la Figura\ref{fig:peaks} se muestran los momentos de pico de 
+% energía de un fragmento del audio \texttt{20231021\_190000h}.
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{Graphics/peaks_before.png}
+%     \caption{Momentos de pico de energía de un fragmento de los audios del \texttt{20231021\_190000} antes de sincronizar. Con línea discontinua se representa el momento de tiempo en que ocurre un pico de energía para cada audio, que se puede distinguir de los demás por el color de la línea. Con línea continua negra se representan en particular los momentos de pico de energía de la grabación \texttt{20231021\_190000h}.}
+%     \label{fig:peaks}
+%   \end{figure}
+
+% Para estimar los desfases entre canales, se construyó un 
+% histograma de los tiempos de pico de cada audio, relativo al 
+% inicio de la grabación. Luego, se aplicó correlación cruzada \cite{costa2021comparing} 
+% entre los histogramas de pares de canales, desplazando uno 
+% respecto al otro y calculando el coeficiente de correlación 
+% máxima para cada posible \emph{lag}. 
+% Este enfoque permitió identificar el desfase 
+% óptimo que maximiza el solapamiento de las estructuras 
+% temporales de canto.
+
+% Una vez determinados los desfases relativos, se alinearon todos 
+% los canales utilizando un canal de referencia global (en este caso, el canal 
+% “\texttt{20231021\_190000h}”, que presentaba la señal más limpia) aplicando un 
+% desplazamiento de muestras correspondiente al \emph{lag} 
+% calculado. La Figura \ref{fig:peaksafter} ilustra los picos de 
+% energía tras la alineación, mostrando una coincidencia temporal 
+% precisa. Finalmente, estos desfases se incorporaron a 
+% los archivos originales, de modo que todos los 
+% audios quedaran sincronizados con un error mínimo.
+
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{Graphics/peaks_after.png}
+%     \caption{Momentos de pico de energía de un fragmento de los audios del \texttt{20231021\_190000} después de sincronizar. Con línea discontinua se representa el momento de tiempo en que ocurre un pico de energía para cada audio, que se puede distinguir de los demás por el color de la línea. Con línea continua negra se representan en particular los momentos de pico de energía de la grabación \texttt{20231021\_190000h}}
+%     \label{fig:peaksafter}
+%   \end{figure}
+
+\section{Sincronización de los audios}
+\label{sec:sincronizacion}
+
+La sincronización de las grabaciones de audio constituyó una 
+etapa crítica para asegurar la coherencia temporal necesaria en 
+el análisis posterior de los cantos de \emph{E.\,eileenae}. 
+Aunque los nueve dispositivos de grabación fueron activados 
+simultáneamente, cada uno presentaba desfases mínimos, posiblemente 
+debido a pequeñas variaciones en el hardware y al retardo de 
+la activación remota, los cuales 
+resultaban significativos para el procesamiento subsecuente. 
+Para corregir estos 
+desfases se implementó un procedimiento automático basado en 
+los puntos de máximos locales extraídos de los Mel-espectrogramas de cada 
+canal.
+
+En primer lugar, tras eliminar el ruido de fondo, se localizaron 
+los puntos de máximo local en cada espectrograma. Dado que un 
+Mel-espectrograma es una matriz de dimensiones (bandas de frecuencias x tiempo), 
+cada punto de máximo se identifica por un par \((t,f)\), donde 
+\(t\) es el índice temporal y \(f\) la banda de frecuencia 
+asociada.
+
+A continuación, para cada par de archivos se tomaron sus 
+respectivas listas de puntos de máximo local y se alinearon en 
+tiempo buscando el desplazamiento óptimo. Con tal fin, se 
+construyeron histogramas de los índices temporales de los 
+máximos (ignorando la componente de frecuencia) y se aplicó 
+correlación cruzada entre ambos histogramas. 
+El desplazamiento (\emph{lag}) que maximiza la correlación 
+indica la mejor coincidencia temporal entre los picos de energía 
+de los dos canales.
+
+Una vez obtenidos los \emph{lags} óptimos para cada par de 
+archivos, se empleó un algoritmo \textit{greedy} para propagar 
+estas alineaciones y establecer una sincronización global entre 
+los nueve canales. Finalmente, los desplazamientos resultantes 
+se aplicaron a los datos originales, garantizando que todos los 
+audios compartieran una referencia temporal común con un error 
+mínimo.
+
+% En la Figura~\ref{fig:peaksbefore} se muestran los picos de 
+% energía antes de sincronizar, mientras que la 
+% Figura~\ref{fig:peaksafter} ilustra la coincidencia de los 
+% máximos tras aplicar los \emph{lags} y completar el alineamiento 
+% global.
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{Graphics/peaks_before.png}
+%     \caption{Momentos de pico de energía de un fragmento de los audios del \texttt{20231021\_190000} antes de sincronizar. La línea continua negra muestra los picos del canal de referencia (\texttt{...h}), y las discontinuas los de los demás canales.}
+%     \label{fig:peaksbefore}
+% \end{figure}
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{Graphics/peaks_after.png}
+%     \caption{Momentos de pico de energía del mismo fragmento después de aplicar la alineación global de \emph{lags}. Todas las trazas coinciden temporalmente.}
+%     \label{fig:peaksafter}
+% \end{figure}
+
 
 
 % region algorythms
@@ -301,8 +368,20 @@ se obtendrán por separado los datos que se buscan.
 Para explotar esta idea se dividió cada 
 grabación en dos bandas de interés (baja frecuencia (“CO”) y 
 alta frecuencia (“LIN”)) y se procesaron en paralelo. En cada 
-banda se computaron nuevamente las energías temporales con la 
-fórmula \eqref{energyformula}. 
+banda se computaron las energías temporales, 
+obteniendo en cada instante \(j\), la suma 
+de los cuadrados de las intensidades en las \(n\) bandas de 
+frecuencia del Mel-espectrograma, es decir:
+\begin{equation}
+    \label{energyformula}
+    E_j \;=\; \sum_{i=0}^{n} a_{ij}^2 
+    \qquad\forall\,j,
+\end{equation}
+donde \(a_{ij}\) es la intensidad en la banda \(i\) y el tiempo 
+\(j\), y \(E_j\) representa la energía total en dicho instante 
+\cite{jurafskyspeech}. 
+
+
 A partir de estos vectores de energía, el algoritmo aplicó la 
 siguiente estrategia:
 
@@ -319,11 +398,6 @@ siguiente estrategia:
   \item Finalmente, se almacenaron los \emph{arrays} resultantes como secuencias de cantos por micrófono.
 \end{enumerate}
 
-Este procedimiento, ilustrado en el pseudocódigo del 
-Algoritmo 1 y en la Figura \ref{fig:algorithm}, garantizó que cada instante de canto fuera 
-asignado al micrófono cuya energía fuera dominante. 
-La complejidad temporal resultó \(O(n^2)\), con \(n\) igual al 
-número de muestras en el eje temporal del Mel-espectrograma.
 
 \begin{algorithm}
     \caption{Colin Sequence by Energy}
@@ -347,16 +421,47 @@ número de muestras en el eje temporal del Mel-espectrograma.
     \end{algorithmic}
 \end{algorithm}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Graphics/algorithm.jpg}
-    \caption{Esquema de ejecución del Algoritmo basado en energías relativas.}
-    \label{fig:algorithm}
-\end{figure}
+Este procedimiento, ilustrado en el pseudocódigo del 
+Algoritmo 1, garantizó que cada instante de canto fuera 
+asignado al micrófono cuya energía fuera dominante. 
+La complejidad temporal resultó \(O(n^2)\), con \(n\) igual al 
+número de muestras en el eje temporal del Mel-espectrograma.
 
 
-\subsection{Algoritmo basado en hipótesis de comportamiento}
-\label{alg_comportamiento}
+
+\subsection{Algoritmo basado en agrupamiento espectro-temporal}
+\label{sec:alg_aglomerativo}
+
+El segundo método propuesto partió también de los 
+Mel-espectrogramas preprocesados y filtrados, pero incorporó 
+explícitamente la estructura temporal y espectral de los cantos 
+“CO” y “LIN” de \emph{E.\,eileenae}. La idea central consistió 
+en extraer todos los máximos locales del espectrograma (cada 
+uno identificado por un par \((t,f)\)) y luego agruparlos en 
+parejas correspondientes a los dos componentes del canto 
+(frecuencia baja para “CO” y alta para “LIN”) de acuerdo con 
+ventanas temporales aprendidas a partir de histogramas de datos 
+manuales. A las parejas \((t_{\mathrm{CO}},f_{\mathrm{CO}})\) y 
+\((t_{\mathrm{LIN}},f_{\mathrm{LIN}})\) obtenidas se les aplicó 
+un algoritmo aglomerativo de clustering, usando como métrica la 
+suma de cuadrados de la diferencia de frecuencias, de modo que 
+aquellas parejas cuyos valores espectrales y temporales se 
+encontraran más cercanos quedaran agrupadas. Cada grupo 
+resultante definió una hipótesis de secuencia de canto, a la que 
+se asignó la potencia media más alta como criterio de selección 
+de la rana más cercana. Finalmente, los canales en los que el 
+número de máximos agrupados no alcanzó un umbral mínimo fueron 
+descartados, asumiendo la ausencia de un Colín próximo.  
+
+\begin{enumerate}
+  \item Se calculó el Mel-espectrograma de cada archivo.
+  \item Se localizaron todos los máximos locales del Mel-espectrograma, cada uno especificado por un par \((t,f)\).
+  \item Se filtraron aquellos máximos cuyas frecuencias y tiempos coincidían con los rangos propios de las notas “CO” y “LIN”, según los histogramas derivados de datos reales.
+  \item A las parejas \((t_{\mathrm{CO}},f_{\mathrm{CO}})\) y \((t_{\mathrm{LIN}},f_{\mathrm{LIN}})\) resultantes se les aplicó clustering aglomerativo, con distancia basada en la diferencia al cuadrado de frecuencias.
+  \item Se seleccionó la secuencia cuyo grupo presentó la potencia media de canto más alta, asignándola al micrófono correspondiente.
+  \item Se descartaron los canales con un número de máximos inferior al umbral mínimo, declarándolos sin detección de Colín.
+\end{enumerate}
+
 
 % region Ising
 \section{Modelado de interacciones con el modelo de Ising}
@@ -392,14 +497,11 @@ binario
 \(\boldsymbol{\sigma} = (\sigma_1, \dots, \sigma_N)\), y la 
 probabilidad de observar una configuración determinada se modela 
 según la distribución de Boltzmann:
-
 \[
 P(\boldsymbol{\sigma}) = \frac{1}{Z} \exp\left( \sum_{i<j} J_{ij} \sigma_i \sigma_j + \sum_{i} h_i \sigma_i \right),
 \]
-
 donde \( Z \) es la función de partición que normaliza la 
 distribución:
-
 \[
 Z = \sum_{\boldsymbol{\sigma}} \exp\left( \sum_{i<j} J_{ij} \sigma_i \sigma_j + \sum_i h_i \sigma_i \right).
 \]
@@ -444,25 +546,20 @@ La tarea de inferir los parámetros del modelo a partir de
 observaciones consiste en encontrar los valores de \( J_{ij} \) 
 y \( h_i \) que maximizan la verosimilitud del conjunto de 
 configuraciones observadas:
-
 \[
 \mathcal{L}(J, h) = \sum_{m=1}^{M} \log P(\boldsymbol{\sigma}^{(m)}),
 \]
-
 donde \( \{\boldsymbol{\sigma}^{(m)}\}_{m=1}^M \) son las 
 configuraciones registradas.
 
 El gradiente de esta función de verosimilitud con respecto a los 
 parámetros tiene la forma:
-
 \[
 \frac{\partial \mathcal{L}}{\partial J_{ij}} = \langle \sigma_i \sigma_j \rangle_{\text{datos}} - \langle \sigma_i \sigma_j \rangle_{\text{modelo}},
 \]
-
 \[
 \frac{\partial \mathcal{L}}{\partial h_i} = \langle \sigma_i \rangle_{\text{datos}} - \langle \sigma_i \rangle_{\text{modelo}},
 \]
-
 donde los términos \( \langle \cdot \rangle_{\text{datos}} \) se 
 obtienen como promedios sobre las configuraciones empíricas, y 
 los términos \( \langle \cdot \rangle_{\text{modelo}} \) se 
@@ -477,30 +574,22 @@ gradiente exacto, complementado con regularización \(L_2\) sobre
 los pesos \( J_{ij} \) para evitar sobreajuste.
 
 La energía asociada a una configuración se definió como:
-
 \[
 E(\boldsymbol{\sigma}) = -\sum_{i<j} J_{ij} \sigma_i \sigma_j - \sum_i h_i \sigma_i,
 \]
-
 lo cual permitió expresar su probabilidad como:
-
 \[
 P(\boldsymbol{\sigma}) = \frac{1}{Z} \exp\left(-E(\boldsymbol{\sigma})\right).
 \]
 
 El algoritmo iterativo actualizó los parámetros siguiendo las 
 reglas:
-
 \begin{align}
     h_i &\leftarrow h_i + \eta \left( \langle \sigma_i \rangle_{\text{datos}} - \langle \sigma_i \rangle_{\text{modelo}} \right), \\
     J_{ij} &\leftarrow J_{ij} + \eta \left( \langle \sigma_i \sigma_j \rangle_{\text{datos}} - \langle \sigma_i \sigma_j \rangle_{\text{modelo}} \right) - \eta \lambda J_{ij},
 \end{align}
-
 donde \( \eta \) es la tasa de aprendizaje y \( \lambda \) el 
 coeficiente de regularización.
-
-
-El proceso iterativo se detalla a continuación:
 
 \begin{algorithm}[H]
     \caption{Gradient Descent for Ising Model Parameter Inference}
@@ -531,7 +620,7 @@ El proceso iterativo se detalla a continuación:
     \end{algorithmic}
 \end{algorithm}
 
-Este procedimiento garantizó la convergencia a un conjunto de 
+Este procedimiento (descrito en el pseudocódigo del Algoritmo 2) garantizó la convergencia a un conjunto de 
 parámetros que maximizan la verosimilitud del modelo, y 
 proporciona una primera reconstrucción de la red de 
 interacciones acústicas dentro del coro.

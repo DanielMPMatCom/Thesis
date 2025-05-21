@@ -20,21 +20,21 @@
 \contentsline {section}{\numberline {1.4}Antecedentes específicos en \emph {E.\,eileenae}}{22}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Métodos}{24}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Representación de audios con Mel-espectrogramas}{26}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Sincronización de los audios}{27}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Filtrado de ruido de fondo}{29}{section.2.3}%
+\contentsline {section}{\numberline {2.2}Filtrado de ruido de fondo}{27}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Sincronización de los audios}{28}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Detección y asignación heurística de cantos de Colines a Micrófonos}{30}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Algoritmo basado en hipótesis de energías relativas}{31}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Algoritmo basado en hipótesis de comportamiento}{32}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.1}Algoritmo basado en hipótesis de energías relativas}{30}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Algoritmo basado en agrupamiento espectro-temporal}{32}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}Modelado de interacciones con el modelo de Ising}{32}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Fundamentos del modelo de Ising}{33}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Formulación del sistema acústico como red de espines}{34}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Formulación del sistema acústico como red de espines}{33}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Inferencia por máxima verosimilitud y descenso por gradiente}{34}{subsection.2.5.3}%
 \contentsline {chapter}{\numberline {3}Resultados e Interpretación}{37}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Resultados y evaluación de los algoritmos propuestos}{37}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Consistencia}{38}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Comparación entre algoritmos heurísticos}{40}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{41}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{43}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{44}{section.3.4}%
 \contentsline {chapter}{Conclusiones}{47}{chapter*.7}%
 \contentsline {chapter}{Recomendaciones}{48}{chapter*.8}%
 \contentsline {chapter}{Referencias Bibliográficas}{49}{chapter*.9}%

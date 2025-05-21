@@ -51,12 +51,10 @@
 \backcite {zhang2021acoustic}{{26}{2.1}{section.2.1}}
 \backcite {zhang2021acoustic}{{26}{2.1}{section.2.1}}
 \backcite {alonso2001llamadas}{{26}{2.1}{section.2.1}}
-\backcite {jurafskyspeech}{{27}{2.2}{equation.2.1}}
-\backcite {scipy-signal}{{28}{2.2}{figure.2.2}}
-\backcite {costa2021comparing}{{28}{2.2}{figure.2.3}}
+\backcite {jurafskyspeech}{{30}{2.4.1}{equation.2.1}}
 \backcite {ising1925beitrag}{{33}{2.5.1}{subsection.2.5.1}}
-\backcite {chau2017inverse}{{34}{2.5.1}{subsection.2.5.1}}
+\backcite {chau2017inverse}{{33}{2.5.1}{subsection.2.5.1}}
 \backcite {zeng2013maximum}{{34}{2.5.2}{subsection.2.5.2}}
-\backcite {pena2001deduccion}{{35}{2.5.3}{subsection.2.5.3}}
-\backcite {nagelkerke1991note}{{40}{3.2}{figure.3.3}}
-\backcite {schneidman2006weak}{{43}{3.4}{section.3.4}}
+\backcite {pena2001deduccion}{{34}{2.5.3}{subsection.2.5.3}}
+\backcite {nagelkerke1991note}{{41}{3.2}{figure.3.3}}
+\backcite {schneidman2006weak}{{44}{3.4}{section.3.4}}
