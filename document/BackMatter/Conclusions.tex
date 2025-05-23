@@ -3,3 +3,53 @@
 %===================================================================================
 \chapter*{Conclusiones}\label{chapter:conclusions}
 \addcontentsline{toc}{chapter}{Conclusiones}
+
+
+El presente estudio desarrolló y validó un flujo computacional 
+automatizado para el análisis de coros de \textit{Eleutherodactylus 
+eileenae} a partir de grabaciones bioacústicas. Los objetivos 
+específicos se abordaron mediante tres etapas principales: 
+eliminación de ruido y sincronización de señales, detección y 
+asignación de cantos, e 
+inferencia de interacciones acústicas. La sincronización de las 
+nueve pistas de audio se logró mediante 
+correlación cruzada sobre los histogramas de tiempos calculados a partir de 
+los puntos de máximos locales en los Mel-espectrogramas, 
+propiciando la correcta aplicación de los métodos de detección. 
+Los algoritmos heurísticos propuestos para detectar y asignar 
+cantos demostraron alta consistencia interna, con correlaciones 
+superiores elevadas entre ejecuciones independientes. El método 
+basado en \textit{clustering} espectro-temporal mostró mayor 
+sensibilidad en escenarios de baja actividad, superando al 
+enfoque de energías relativas.
+
+La inferencia de interacciones mediante el modelo de Ising 
+reveló acoplamientos significativos entre individuos, 
+evidenciando una estructura de red con tendencias tanto a la 
+co-emisión como a la inhibición. Sin embargo, la comparación con 
+un modelo independiente sugirió que las interacciones podrían 
+ser débiles, que los patrones se manifiestan con poca frecuencia 
+en los datos, lo que los hace difíciles de predecir, 
+o que el modelo de Ising, en su formulación estándar, 
+no captura plenamente la dinámica no lineal del sistema. Esto 
+subraya la necesidad de incorporar términos de orden superior o 
+dinámicas temporales explícitas en futuras aproximaciones. 
+Además, la validación manual limitada por la ausencia de un 
+\textit{ground truth} experto resaltó la importancia de mejorar 
+los protocolos de etiquetado para reducir sesgos en la 
+evaluación de algoritmos.
+
+El presente trabajo representa un avance significativo en el 
+estudio de \emph{Eleutherodactylus eileenae} en Cuba, al 
+introducir un flujo completamente automatizado para el 
+procesamiento de las grabaciones de campo,
+capaz de identificar distintos individuos dentro de una misma 
+especie de anuros, en contraste con la mayoría de estudios 
+previos que se han centrado en distinguir especies distintas a 
+partir de sus vocalizaciones.
+Además, se propuso un enfoque novedoso para modelar 
+matemáticamente las interacciones acústicas del coro mediante un 
+sistema de espines. Con ello se facilita el análisis 
+reproducible de grandes volúmenes de datos bioacústicos y se 
+sienta una base cuantitativa para investigar la dinámica 
+colectiva de los machos cantores.

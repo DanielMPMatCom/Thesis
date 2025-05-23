@@ -37,5 +37,5 @@
 \contentsline {section}{\numberline {3.3}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{45}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{47}{section.3.4}%
 \contentsline {chapter}{Conclusiones}{50}{chapter*.7}%
-\contentsline {chapter}{Recomendaciones}{51}{chapter*.8}%
-\contentsline {chapter}{Referencias Bibliográficas}{52}{chapter*.9}%
+\contentsline {chapter}{Recomendaciones}{52}{chapter*.8}%
+\contentsline {chapter}{Referencias Bibliográficas}{54}{chapter*.9}%
