@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {0.3}Hipótesis}{14}{section.0.3}%
 \contentsline {section}{\numberline {0.4}Objetivos}{14}{section.0.4}%
 \contentsline {section}{\numberline {0.5}Propuesta de solución}{15}{section.0.5}%
-\contentsline {section}{\numberline {0.6}Estructura del Documento}{16}{section.0.6}%
+\contentsline {section}{\numberline {0.6}Estructura del Documento}{15}{section.0.6}%
 \contentsline {chapter}{\numberline {1}Antecedentes}{17}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Detección de individuos en grabaciones}{18}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Métodos clásicos de clasificación de señales acústicas}{18}{subsection.1.1.1}%
@@ -32,9 +32,10 @@
 \contentsline {chapter}{\numberline {3}Resultados e Interpretación}{37}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Resultados y evaluación de los algoritmos propuestos}{37}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Consistencia}{38}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Comparación entre algoritmos heurísticos}{40}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{41}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{44}{section.3.4}%
-\contentsline {chapter}{Conclusiones}{47}{chapter*.7}%
-\contentsline {chapter}{Recomendaciones}{48}{chapter*.8}%
-\contentsline {chapter}{Referencias Bibliográficas}{49}{chapter*.9}%
+\contentsline {subsection}{\numberline {3.1.2}Comparación con detecciones manuales}{40}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Comparación entre algoritmos}{42}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{47}{section.3.4}%
+\contentsline {chapter}{Conclusiones}{50}{chapter*.7}%
+\contentsline {chapter}{Recomendaciones}{51}{chapter*.8}%
+\contentsline {chapter}{Referencias Bibliográficas}{52}{chapter*.9}%

@@ -90,8 +90,89 @@ reproducibles.
 \end{figure}
 
 
+\subsection{Comparación con detecciones manuales}
+
+Para evaluar de forma cualitativa el desempeño de ambos 
+algoritmos, se compararon sus detecciones con un etiquetado 
+manual de cantos “CO” y “LIN” realizado sobre el conjunto de 
+grabaciones de la sesión \texttt{20231021\_190000}. Dado que el 
+tagueo fue efectuado por personal no experto, esta comparación 
+se abordó de manera visual y comparativa, sin aspirar a la 
+rigurosidad de un protocolo validado por especialistas.  
+
+En la Figura~\ref{fig:conf_mat_energies_cluster} se presenta la matriz de 
+confusión del algoritmo basado en \textit{clustering} espectro-temporal (izq.) y 
+la correspondiente al algoritmo de energías relativas (der.). 
+Se consideró que un algoritmo había detectado correctamente un canto
+cuando coincidía temporalmente (con tolerancia de 1 segundo) y en micrófono con los datos etiquetados.
+Se observa 
+que el método de \textit{clustering} obtuvo un mayor número de verdaderos 
+positivos y menos falsos positivos que el de energías relativas. 
+Ello se explica porque, cuando no todas las ranas estaban 
+activas, el algoritmo de energías relativas tendía a asignar 
+cantos a cada micrófono (incluso en aquellos donde no se encontraba cantando
+ningún colín), elevando así sus falsos positivos. Por el 
+contrario, el \textit{clustering} descartó los canales con actividad 
+insuficiente, resultando más robusto en entornos de baja 
+densidad acústica.  
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\columnwidth]{Graphics/confusion_matrix_clustering_energies.png}
+  \caption{Matriz de confusión del algoritmo de energías relativas vs.\ detecciones manuales (izq.). Matriz de confusión del algoritmo de \textit{clustering} espectro-temporal vs.\ detecciones manuales (der.).}
+  \label{fig:conf_mat_energies_cluster}
+\end{figure}
+
+
+
+No se contabilizaron los verdaderos negativos (no canto) dado 
+que dichos valores no forman parte de la salida de los 
+algoritmos.  
+
+Adicionalmente, se compararon los \(\Delta t\) (tiempo entre 
+“CO” y su “LIN” correspondiente) obtenidos manualmente y por 
+cada algoritmo. En el caso del método de energías, al ejecutarse
+por separado en los “CO” y los “LIN”, algunos “CO” 
+o “LIN” quedaron desemparejados y fueron filtrados mediante un 
+umbral extraído del etiquetado manual. Tras este emparejamiento, 
+el número de llamados considerados por el algoritmo de energías 
+relativas bajó de 7 290 “LIN” y 9 863 “CO” a 5 467 pares, cifra 
+cercana a los 5 964 pares hallados por \textit{clustering}.  
+
+Los \textit{boxplots} y \textit{violinplots} de la Figura~\ref{fig:dt_box_violin} 
+muestran que la distribución de \(|\Delta t|\) es muy similar 
+entre el etiquetado manual, el algoritmo de energías y el de 
+\textit{clustering}. Asimismo, los histogramas comparativos 
+(Figura \ref{fig:histograms_deltas}) revelan 
+alineamientos próximos de ambas técnicas con el patrón de 
+referencia, a pesar de la posible imprecisión en los tags 
+manuales.  
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\linewidth]{Graphics/boxplot_and_violin.png}
+  \caption{\textit{Boxplot} y \textit{violinplot} de \(|\Delta t|\) entre “CO” y “LIN” para detecciones manuales, algoritmo de energías relativas y \textit{clustering}.}
+  \label{fig:dt_box_violin}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.48\linewidth]{Graphics/histogram_energies_tags.png}
+  \includegraphics[width=0.48\linewidth]{Graphics/histogram_clustering_tags.png}
+  \caption{Histogramas de \(\Delta t\): (izq.) manual vs.\ energías relativas; (der.) manual vs.\ \textit{clustering}.}
+  \label{fig:histograms_deltas}
+\end{figure}
+
+En conjunto, estos resultados sugieren que ambos algoritmos 
+capturan adecuadamente la dinámica temporal del canto, aunque 
+el \textit{clustering} ofrece mayor fiabilidad en escenarios de baja 
+actividad. Para una validación estadística más rigurosa sería 
+necesario un etiquetado experto que minimice el ruido de 
+referencia.
+
+
 % region Comparison
-\section{Comparación entre algoritmos heurísticos}
+\section{Comparación entre algoritmos}
 \label{sec:res_comparacion}
 
 
@@ -106,8 +187,8 @@ punto representando un canto detectado por ambos algoritmos y
 coloreado según el individuo correspondiente. La línea negra 
 discontinua representa la identidad \( y = x \), indicando 
 perfecta coincidencia entre ambos métodos. Por simplicidad,
-el algoritmo descrito en la Sección~\ref{sec:alg_energia} se
-denominó \textbf{Algoritmo A} y el de la Sección~\ref{sec:alg_aglomerativo},
+el algoritmo descrito en la Sección~\ref{sec:alg_energia} (basado en energías relativas) 
+se denominó \textbf{Algoritmo A} y el de la Sección~\ref{sec:alg_aglomerativo} (\emph{clustering} de espectro-tiempo),
 \textbf{Algoritmo B}.
 
 \begin{figure}[ht]
@@ -169,6 +250,54 @@ independientemente del criterio heurístico considerado.
 Esta coincidencia refuerza la fiabilidad de las secuencias de 
 canto extraídas, base fundamental para el análisis posterior de 
 las interacciones acústicas en el sistema.
+
+
+
+
+Adicionalmente, se analizaron las discrepancias en la detección 
+de eventos “CO-LIN” entre ambos métodos. La 
+Figura~\ref{fig:delta_hist} presenta el histograma comparativo 
+de los \(\Delta t\) (diferencia temporal entre “CO” y “LIN”) 
+detectados por el Algoritmo A y el Algoritmo B. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\columnwidth]{Graphics/histogram_energies_clustering.png}
+    \caption{Histogramas comparativos de \(\Delta t\) entre “CO” y “LIN” para el Algoritmo A (energías temporales) y el Algoritmo B (\textit{clustering} de espectro-tiempo).}
+    \label{fig:delta_hist}
+\end{figure}
+
+Por último, se contabilizó cuántos cantos fueron detectados 
+exclusivamente por cada algoritmo y cuántos coincidieron 
+temporalmente (dentro de ±1 s) en el mismo micrófono. Los 
+resultados fueron:
+\begin{itemize}
+  \item Solo detectados por Algoritmo A: 2429 cantos
+  \item Solo detectados por Algoritmo B: 3000 cantos
+  \item Detectados por ambos algoritmos: 3038 cantos
+\end{itemize}
+
+Estas cifras indican que el Algoritmo B (\textit{clustering}) 
+identificó un mayor número de cantos no captados por el 
+Algoritmo A, mientras que ambos detectaron conjuntamente la 
+mayoría de eventos (3038). En particular, el Algoritmo A pasó 
+por alto una parte significativa de cantos (2429 únicos de B 
+frente a 3000 únicos de A), lo que refuerza la hipótesis de 
+que su estrategia de 
+energías relativas resulta menos sensible cuando no todos los 
+individuos emiten simultáneamente. Por el contrario, el 
+\textit{clustering} demostró una mayor cobertura de detección 
+sin sacrificar la coincidencia temporal, confirmando su idoneidad 
+en situaciones de actividad coral variable.
+
+En conjunto, esta comparación demuestra que los dos algoritmos 
+proporcionan resultados muy similares en cuanto a tiempo de 
+detección (\(R^2\) casi unidad), pero difieren en sensibilidad: 
+especialmente cuando no todos los Colines 
+estaban activos simultáneamente, el método basado en \textit{clustering} 
+(Algoritmo B) mostró mejor rendimiento general.
+
+
 
 % region Ising
 \section{Análisis de las interacciones inferidas \(\{J_{ij}\}\)}
