@@ -25,17 +25,17 @@
 \contentsline {section}{\numberline {2.4}Detección y asignación heurística de cantos de Colines a Micrófonos}{30}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Algoritmo basado en hipótesis de energías relativas}{30}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Algoritmo basado en agrupamiento espectro-temporal}{32}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Modelado de interacciones con el modelo de Ising}{32}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Fundamentos del modelo de Ising}{33}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Formulación del sistema acústico como red de espines}{33}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Inferencia por máxima verosimilitud y descenso por gradiente}{34}{subsection.2.5.3}%
-\contentsline {chapter}{\numberline {3}Resultados e Interpretación}{37}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Resultados y evaluación de los algoritmos propuestos}{37}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Consistencia}{38}{subsection.3.1.1}%
+\contentsline {section}{\numberline {2.5}Modelado de interacciones con el modelo de Ising}{33}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Fundamentos del modelo de Ising}{34}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Formulación del sistema acústico como red de espines}{34}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Inferencia por máxima verosimilitud y descenso por gradiente}{35}{subsection.2.5.3}%
+\contentsline {chapter}{\numberline {3}Resultados e Interpretación}{38}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Resultados y evaluación de los algoritmos propuestos}{38}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Consistencia}{39}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Comparación con detecciones manuales}{40}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Comparación entre algoritmos}{42}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{45}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{47}{section.3.4}%
-\contentsline {chapter}{Conclusiones}{50}{chapter*.7}%
-\contentsline {chapter}{Recomendaciones}{52}{chapter*.8}%
-\contentsline {chapter}{Referencias Bibliográficas}{54}{chapter*.9}%
+\contentsline {section}{\numberline {3.2}Comparación entre algoritmos}{43}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{48}{section.3.4}%
+\contentsline {chapter}{Conclusiones}{51}{chapter*.7}%
+\contentsline {chapter}{Recomendaciones}{53}{chapter*.8}%
+\contentsline {chapter}{Referencias Bibliográficas}{55}{chapter*.9}%

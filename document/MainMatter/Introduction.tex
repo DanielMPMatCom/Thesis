@@ -50,7 +50,7 @@ Guía sonora de los anfibios de Cuba
 \footnote{Grabación disponible en: \url{https://www.fonozoo.com/fnz_detalles_registro_amphibia.php?id=97953&tipo_registro=1}}
 se puede encontrar una breve grabación de su canto y otros datos relevantes.\\
 
-\begin{figure}[h!]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{Graphics/colin.jpg}
     \caption{Ejemplar de \emph{Eleutherodactylus eileenae}.}
@@ -96,10 +96,7 @@ Los resultados de la presente tesis constituyen un primer paso hacia
 el desarrollo de un 
 flujo completo que abarque, desde la adquisición y sincronización 
 de señales, hasta la clasificación automática de cantos y el 
-modelado de interacciones acústicas, a fin de superar las 
-limitaciones de los métodos manuales y aportar herramientas 
-robustas para la ecoacústica de anfibios en Cuba y regiones 
-semejantes.
+modelado de interacciones acústicas.
 
 \section{Formulación del problema}
 \label{sec:formulacion_problema}
@@ -120,7 +117,7 @@ tanto en la sincronización de señales como en la discriminación
 de los eventos acústicos relevantes frente a emisiones no 
 deseadas. En la Figura \ref{fig:map} se muestra la distribución geográfica de los micrófonos en el área de estudio.
 
-\begin{figure}[h!]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{Graphics/mic_map.jpg}
     \caption{Distribución Geográfica de los Micrófonos.}
@@ -166,8 +163,8 @@ neuronales y colonias de insectos \cite{schneidman2006weak,mora2011biological,bi
 
 Se plantea como hipótesis principal que un flujo computacional 
 basado en algoritmos heurísticos para la sincronización, 
-detección y clasificación de cantos de Colines podrá reproducir con un alto 
-grado de fidelidad las secuencias de emisión de cada individuo 
+detección y clasificación de cantos de Colines podrá reproducir 
+las secuencias de emisión de cada individuo 
 y, a partir de ellas, inferir las interacciones acústicas 
 subyacentes a la formación de coros. 
 
@@ -216,10 +213,11 @@ Para ello se plantean los siguientes objetivos específicos:
 \label{sec:propuesta_solucion}
 
 Para dar respuesta al problema planteado, se propone un 
-flujo de trabajo modular que integre cuatro etapas principales: 
+flujo de trabajo modular que integre cuatro etapas: 
 sincronización, filtrado, asignación de 
-emisores y modelado de interacciones. En primer lugar, la 
-sincronización de las nueve pistas de audio se realiza 
+emisores y modelado de interacciones. 
+
+La sincronización de las nueve pistas de audio se realiza 
 mediante la aplicación de correlación cruzada sobre los histogramas
 de distribución de distancias temporales entre los picos de energía de los audios 
 y un punto de referencia. A continuación, se 
@@ -249,8 +247,8 @@ configuraciones similares.
 \label{sec:estructura_documento}
 
 Para explicar la solución propuesta y el flujo de trabajo, 
-se diseñó la siguiente estructura del presente documento. 
-En el Capítulo 1 se revisan los antecedentes y actualidad en cuanto a 
+se diseñó un documento con la siguiente estructura. 
+En el Capítulo 1 se revisan los antecedentes y actualidad de la 
 detección y 
 clasificación de llamadas bioacústicas, con especial énfasis 
 en métodos de sincronización y filtrado de señales. 
@@ -265,9 +263,10 @@ resultados: evaluación de la precisión de
 sincronización, rendimiento de los detectores de canto, 
 exactitud de la asignación micrófono-Colín y análisis de las 
 interacciones inferidas \(\{J_{ij}\}\). Además en las 
-Conclusiones se discuten las aportaciones principales, las 
+Conclusiones se discuten los aportes principales, las 
 implicaciones ecológicas y computacionales y las limitaciones 
 del estudio.
+
 Finalmente, en las Recomendaciones se presentarán sugerencias 
 generales basadas en los resultados, destinadas a 
 orientar mejoras metodológicas, proponer nuevas líneas de 

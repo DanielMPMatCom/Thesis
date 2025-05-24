@@ -40,7 +40,7 @@ eventos de “CO” y “LIN” en cada canal.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{Graphics/sequence.png}
-    \caption{Fragmento de Secuencia de Cantos de los Colines en los archivos de \texttt{20231021\_190000}.}
+    \caption{Fragmento de Secuencia de Cantos de los Colines en los archivos de \texttt{20231021\_190000}. Arriba la señales “LIN”, debajo los “CO”. Cada color representa una rana o micrófono diferente.}
     \label{fig:seq}
 \end{figure}
 
@@ -96,7 +96,7 @@ Para evaluar de forma cualitativa el desempeño de ambos
 algoritmos, se compararon sus detecciones con un etiquetado 
 manual de cantos “CO” y “LIN” realizado sobre el conjunto de 
 grabaciones de la sesión \texttt{20231021\_190000}. Dado que el 
-tagueo fue efectuado por personal no experto, esta comparación 
+etiquetado fue efectuado por personal no experto, esta comparación 
 se abordó de manera visual y comparativa, sin aspirar a la 
 rigurosidad de un protocolo validado por especialistas.  
 
@@ -159,7 +159,7 @@ manuales.
   \centering
   \includegraphics[width=0.48\linewidth]{Graphics/histogram_energies_tags.png}
   \includegraphics[width=0.48\linewidth]{Graphics/histogram_clustering_tags.png}
-  \caption{Histogramas de \(\Delta t\): (izq.) manual vs.\ energías relativas; (der.) manual vs.\ \textit{clustering}.}
+  \caption{Histogramas de \(\Delta t\): (izq.) manual vs.\ energías relativas; (der.) manual vs.\ \textit{clustering}. Los colores representan el origen de los datos (etiquetado manual, algoritmo de energías relativas o algoritmo de \textit{clustering}).}
   \label{fig:histograms_deltas}
 \end{figure}
 
@@ -337,8 +337,8 @@ representa a un individuo (o micrófono) y las aristas indican
 la existencia de interacciones significativas. En particular, 
 se utilizó una línea continua para aquellas interacciones cuya 
 magnitud supera el umbral de 0.5, y una línea discontinua para 
-aquellas en el rango entre 0.3 y 0.5. Las conexiones cuya 
-magnitud resultó inferior a este último valor se consideraron 
+aquellas en el rango entre 0.3 y 0.5. Las conexiones cuyas 
+magnituded resultaron inferiores a este último valor se consideraron 
 insignificantes y fueron omitidas del grafo para mejorar la 
 claridad visual. El resultado se presenta en la 
 Figura~\ref{fig:graph}.
@@ -427,7 +427,13 @@ nulas durante las ventanas analizadas, (2) el modelo de Ising,
 en su forma estacionaria y de segundo orden, podría no capturar 
 adecuadamente la dinámica temporal o no lineal de los coros, o 
 (3) la escasez de datos para patrones raros impide una estimación 
-fiable de los parámetros de interacción.
+fiable de los parámetros de interacción. Esta última parece la más 
+probable, dado que en la ejecución del descenso por gradiente se
+escogió un \(\Delta t = 0\) para cuantificar las correlaciones entre
+los espines (los Colines) a través de los estados del sistema. 
+Esto puede estar arrojando resultados engañosos debido a que es 
+mucho más probable un estado de -1 que de +1 (es mucho más tiempo en el que
+los Colines no vocalizan que el tiempo en que lo hacen). 
 
 En conjunto, estos hallazgos indican que, para el conjunto de 
 grabaciones y la metodología empleada, el supuesto de 
@@ -437,6 +443,7 @@ canto. No obstante, la presencia de acoplamientos significativos
 observados en Sección~\ref{sec:res_interacciones} sugiere que 
 podría ser necesaria una extensión del modelo (por ejemplo, 
 incorporando términos de orden superior, efectos no 
-estacionarios o dependencias temporales explícitas) para 
+estacionarios o dependencias temporales explícitas, así como explorar 
+los valores del umbral de tiempo en el que se calculan las correlaciones) para 
 capturar plenamente la complejidad del comportamiento grupal de 
 \emph{E.\,eileenae}.

@@ -584,14 +584,14 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ppl.fd
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ppl.fd
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ppl.fd
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8c.tfm
-INPUT .\Graphics\mel-spectrogram.png
-INPUT .\Graphics\mel-spectrogram.png
-INPUT .\Graphics\mel-spectrogram.png
-INPUT .\Graphics\mel-spectrogram.png
-INPUT .\Graphics\mel-spectrogram.png
-INPUT .\Graphics\mel-spectrogram.png
-INPUT .\Graphics\mel-spectrogram.png
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr8c.vf
+INPUT .\Graphics\mel-spectrogram.png
+INPUT .\Graphics\mel-spectrogram.png
+INPUT .\Graphics\mel-spectrogram.png
+INPUT .\Graphics\mel-spectrogram.png
+INPUT .\Graphics\mel-spectrogram.png
+INPUT .\Graphics\mel-spectrogram.png
+INPUT .\Graphics\mel-spectrogram.png
 INPUT .\Graphics\car_noise_before.png
 INPUT .\Graphics\car_noise_before.png
 INPUT .\Graphics\car_noise_before.png
@@ -622,6 +622,7 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\z
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
@@ -642,7 +643,6 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplbi8r.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT .\MainMatter\Results.tex
 INPUT .\MainMatter\Results.tex
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Results.aux

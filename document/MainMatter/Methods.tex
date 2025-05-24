@@ -44,15 +44,15 @@ Además, para poder obtener las secuencias de cantos y estudiar los coros,
 surgió la necesidad de diseñar procesos para discriminar correctamente
 estos datos, y obtener una asigación Micrófono-Colín.   
 También se debía verificar la correcta sincronización de las grabaciones,
-pues a pesar de la activación remota y simultánea, el posible error de \emph{hardware}
-podría comprometer la precisión de los resultados. En este capítulo
+pues a pesar de la activación remota y simultánea, posibles errores de medición
+podrían comprometer la precisión de los resultados. En este capítulo
 se describen los métodos utilizados para resolver tanto estos problemas
 como el de modelar las interacciones del sistema. 
 
 Con el objetivo de simplificar las explicaciones, se decidió 
 asignar una letra entre la “a” y la “i” a cada uno de los micrófonos,
 de modo que la correspondencia entre la notación original y la nueva 
-qued de la siguiente forma:
+queda de la siguiente forma:
 \begin{itemize}
     \item Micrófono 10: a
     \item Micrófono 12: b\footnote{En los datos originales no existe micrófono 11.}
@@ -86,17 +86,25 @@ requeridas para el estudio de los coros de \emph{E.eileenae} \cite{hill2018audio
 \section{Representación de audios con Mel-espectrogramas}
 \label{sec:mel_spectrogramas}
 
-Para el análisis de las grabaciones se transformó cada archivo 
-de audio en su correspondiente Mel-espectrograma, una 
-representación tiempo-frecuencia que aproxima la percepción 
-auditiva humana mediante la escala mel \cite{zhang2021acoustic}. 
+La escala de mel es una escala perceptual de tono que aproxima la 
+respuesta no lineal del oído humano a diferentes frecuencias. A 
+diferencia de la escala lineal en Hertz (Hz), enfatiza la 
+discriminación de frecuencias bajas (e.g., 100-1000 Hz) y 
+comprime las altas (e.g., >4000 Hz), reflejando cómo los humanos 
+perciben diferencias de altura tonal. Ampliamente utilizada en 
+procesamiento de audio, permite representar señales acústicas 
+en formatos espectralmente significativos llamados Mel-espectrogramas, 
+facilitando la detección de patrones relevantes. \cite{zhang2021acoustic}
 Un Mel-espectrograma se obtiene aplicando una ventana 
 deslizante al audio, calculando la FFT en cada segmento, mapeando las bandas de 
 frecuencia a la escala mel y, finalmente, tomando el logaritmo 
-de la energía resultante \cite{zhang2021acoustic}. Esta 
-representación enfatiza las variaciones espectrales relevantes 
-para el canto de \emph{E.\,eileenae} y facilita la detección de 
-los pulsos “CO” y “LIN” en las grabaciones.
+de la energía resultante \cite{zhang2021acoustic}. 
+
+Para el análisis de las grabaciones se transformó cada archivo 
+de audio en su correspondiente Mel-espectrograma,
+buscando enfatizar las variaciones espectrales relevantes 
+para el canto de \emph{E.\,eileenae} y facilitar la detección de 
+los pulsos “CO” y “LIN” en los audios.
 
 Para la generación de los Mel-espectrogramas se emplearon los 
 siguientes parámetros, optimizados para cubrir el rango de 
@@ -298,7 +306,16 @@ tiempo buscando el desplazamiento óptimo. Con tal fin, se
 construyeron histogramas de los índices temporales de los 
 máximos (ignorando la componente de frecuencia) y se aplicó 
 correlación cruzada entre ambos histogramas. 
-El desplazamiento (\emph{lag}) que maximiza la correlación 
+La correlación cruzada es una medida estadística que cuantifica 
+la similitud entre dos señales al compararlas en diferentes 
+desplazamientos temporales, utilizada comúnmente para sincronizar 
+grabaciones o identificar patrones coincidentes en análisis de 
+series temporales. Se calcula con la siguiente fórmula:
+\begin{equation*}
+	CC = \sum_{i=0}^{n} a_{i}b_{i},     \cite{costa2021comparing}
+\end{equation*} 
+donde $a_i$ y $b_i$ son los valores en el índice $i$ de los \textit{arrays} sobre los que se aplica el método.
+En este caso el desplazamiento (\emph{lag}) que maximiza la correlación 
 indica la mejor coincidencia temporal entre los picos de energía 
 de los dos canales.
 
@@ -451,7 +468,9 @@ resultante definió una hipótesis de secuencia de canto, a la que
 se asignó la potencia media más alta como criterio de selección 
 de la rana más cercana. Finalmente, los canales en los que el 
 número de máximos agrupados no alcanzó un umbral mínimo fueron 
-descartados, asumiendo la ausencia de un Colín próximo.  
+descartados, asumiendo la ausencia de un Colín próximo.
+A continuación se describen los pasos seguidos, también 
+ilustrados en el pseudocódigo del Algoritmo 2.
 
 \begin{enumerate}
   \item Se calculó el Mel-espectrograma de cada archivo.
@@ -461,6 +480,28 @@ descartados, asumiendo la ausencia de un Colín próximo.
   \item Se seleccionó la secuencia cuyo grupo presentó la potencia media de canto más alta, asignándola al micrófono correspondiente.
   \item Se descartaron los canales con un número de máximos inferior al umbral mínimo, declarándolos sin detección de Colín.
 \end{enumerate}
+
+
+\begin{algorithm}[H]
+\caption{Spectral-Time Clustering Algorithm for Frog Call Detection}
+\begin{algorithmic}[1]
+\Require Audio files \texttt{audio\_files}, minimum cluster size threshold \texttt{min\_threshold}
+\For{\texttt{each audio\_file in audio\_files}}
+    \State Compute Mel-spectrogram: \texttt{S = melspectrogram(audio\_file)}
+    \State Identify all local maxima in \texttt{S} as pairs $(t, f)$
+    \State Filter maxima to keep only those within CO and LIN frequency and time ranges based on annotated histograms
+    \State Group pairs $(t_{\text{CO}}, f_{\text{CO}})$ and $(t_{\text{LIN}}, f_{\text{LIN}})$ into sequences
+    \State Apply agglomerative clustering to these sequences using squared frequency difference as distance metric
+    \State Compute mean power for each cluster
+    \If{maximum cluster size $<$ \texttt{min\_threshold}}
+        \State Discard this audio file (no frog detected)
+    \Else
+        \State Assign the cluster with the highest mean power to this microphone
+    \EndIf
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
 
 
 % region Ising
@@ -589,7 +630,9 @@ reglas:
     J_{ij} &\leftarrow J_{ij} + \eta \left( \langle \sigma_i \sigma_j \rangle_{\text{datos}} - \langle \sigma_i \sigma_j \rangle_{\text{modelo}} \right) - \eta \lambda J_{ij},
 \end{align}
 donde \( \eta \) es la tasa de aprendizaje y \( \lambda \) el 
-coeficiente de regularización.
+coeficiente de regularización. Además para el cálculo de las correlaciones
+empíricas se utilizó un \(\Delta t = 0\), es decir, se tuvo en cuenta que cada
+estado era el valor de canto o no canto (+1 o -1) en un instante de tiempo.
 
 \begin{algorithm}[H]
     \caption{Gradient Descent for Ising Model Parameter Inference}
@@ -620,7 +663,7 @@ coeficiente de regularización.
     \end{algorithmic}
 \end{algorithm}
 
-Este procedimiento (descrito en el pseudocódigo del Algoritmo 2) garantizó la convergencia a un conjunto de 
+Este procedimiento (descrito en el pseudocódigo del Algoritmo 3) garantizó la convergencia a un conjunto de 
 parámetros que maximizan la verosimilitud del modelo, y 
 proporciona una primera reconstrucción de la red de 
 interacciones acústicas dentro del coro.
