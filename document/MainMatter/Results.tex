@@ -101,8 +101,10 @@ se abordó de manera visual y comparativa, sin aspirar a la
 rigurosidad de un protocolo validado por especialistas.  
 
 En la Figura~\ref{fig:conf_mat_energies_cluster} se presenta la matriz de 
-confusión del algoritmo basado en \textit{clustering} espectro-temporal (izq.) y 
-la correspondiente al algoritmo de energías relativas (der.). 
+confusión del algoritmo basado en energías relativas (izq.) y 
+la correspondiente al algoritmo de \textit{clustering} espectro-temporal (der.). 
+Para esto se tomaron en cuenta solamente las grabaciones donde se detectaron
+manualmente una gran cantidad de cantos.
 Se consideró que un algoritmo había detectado correctamente un canto
 cuando coincidía temporalmente (con tolerancia de 1 segundo) y en micrófono con los datos etiquetados.
 Se observa 
@@ -111,7 +113,7 @@ positivos y menos falsos positivos que el de energías relativas.
 Ello se explica porque, cuando no todas las ranas estaban 
 activas, el algoritmo de energías relativas tendía a asignar 
 cantos a cada micrófono (incluso en aquellos donde no se encontraba cantando
-ningún colín), elevando así sus falsos positivos. Por el 
+ningún colín), elevando así sus falsos positivos y negativos. Por el 
 contrario, el \textit{clustering} descartó los canales con actividad 
 insuficiente, resultando más robusto en entornos de baja 
 densidad acústica.  
@@ -119,7 +121,7 @@ densidad acústica.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\columnwidth]{Graphics/confusion_matrix_clustering_energies.png}
-  \caption{Matriz de confusión del algoritmo de energías relativas vs.\ detecciones manuales (izq.). Matriz de confusión del algoritmo de \textit{clustering} espectro-temporal vs.\ detecciones manuales (der.).}
+  \caption{Matriz de confusión del algoritmo de energías relativas vs.\ detecciones manuales (izq.). Matriz de confusión del algoritmo de \textit{clustering} espectro-temporal vs.\ detecciones manuales (der.). Solo se consideraron los cantos detectados en las grabaciones con mayor actividad.}
   \label{fig:conf_mat_energies_cluster}
 \end{figure}
 
@@ -163,9 +165,10 @@ manuales.
   \label{fig:histograms_deltas}
 \end{figure}
 
-En conjunto, estos resultados sugieren que ambos algoritmos 
-capturan adecuadamente la dinámica temporal del canto, aunque 
-el \textit{clustering} ofrece mayor fiabilidad en escenarios de baja 
+En conjunto, estos resultados sugieren que, comparándose con 
+un etiquetado manual inexperto, el algoritmo basado en \textit{clustering}
+muestra mejor rendimiento en cuanto a capturar la dinámica temporal del canto, 
+pues ofrece mayor fiabilidad en escenarios de baja 
 actividad. Para una validación estadística más rigurosa sería 
 necesario un etiquetado experto que minimice el ruido de 
 referencia.

@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {3.1.2}Comparación con detecciones manuales}{40}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Comparación entre algoritmos}{43}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Análisis de las interacciones inferidas \(\{J_{ij}\}\)}{46}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{48}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Análisis de idoneidad del modelo de Ising}{49}{section.3.4}%
 \contentsline {chapter}{Conclusiones}{51}{chapter*.7}%
 \contentsline {chapter}{Recomendaciones}{53}{chapter*.8}%
-\contentsline {chapter}{Referencias Bibliográficas}{55}{chapter*.9}%
+\contentsline {chapter}{Referencias Bibliográficas}{54}{chapter*.9}%
