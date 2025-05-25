@@ -15,27 +15,36 @@ inferencia de interacciones acústicas. La sincronización de las
 nueve pistas de audio se logró mediante 
 correlación cruzada sobre los histogramas de tiempos calculados a partir de 
 los puntos de máximos locales en los Mel-espectrogramas, 
-propiciando la correcta aplicación de los métodos de detección. 
+propiciando la correcta aplicación de los métodos de detección.
+Esto, sumado a la eliminación de ruido, dio como resultado un 
+dataset limpio y sincronizado que se podrá continuar utilizando en el futuro.
+
 Los algoritmos heurísticos propuestos para detectar y asignar 
 cantos demostraron alta consistencia interna, con correlaciones 
 superiores elevadas entre ejecuciones independientes. El método 
 basado en \textit{clustering} espectro-temporal mostró mayor 
 sensibilidad en escenarios de baja actividad, superando al 
-enfoque de energías relativas.
+enfoque de energías relativas. La aplicación de ambos algoritmos 
+permitió detectar y asignar cada canto a su emisor. Del mismo 
+modo, estas herramientas quedan disponibles para futuros 
+estudios.
 
-La inferencia de interacciones mediante el modelo de Ising 
-reveló acoplamientos significativos entre individuos, 
+Se infirieron dos modelos de interacciones acústicas: el modelo 
+independiente y el modelo de Ising. El segundo de ellos reveló 
+acoplamientos significativos entre individuos, 
 evidenciando una estructura de red con tendencias tanto a la 
 co-emisión como a la inhibición. Sin embargo, la comparación con 
-un modelo independiente sugirió que las interacciones podrían 
-ser débiles, que los patrones se manifiestan con poca frecuencia 
+el modelo independiente sugirió que las interacciones podrían 
+ser débiles.  Esto puede ocurrir porque los patrones se manifiestan 
+con poca frecuencia 
 en los datos, lo que los hace difíciles de predecir, 
-o que el modelo de Ising, en su formulación estándar, 
-no captura plenamente la dinámica no lineal del sistema. Esto 
+o porque el modelo de Ising estándar 
+no captura plenamente la dinámica no lineal del sistema. Lo anterior 
 subraya la necesidad de incorporar términos de orden superior o 
 dinámicas temporales explícitas en futuras aproximaciones. 
-Además, la validación manual limitada por la ausencia de un 
-\textit{ground truth} experto resaltó la importancia de mejorar 
+La validación manual estuvo limitada por la ausencia de un 
+\textit{ground truth} experto, lo que resalta la importancia la 
+importancia de mejorar 
 los protocolos de etiquetado para reducir sesgos en la 
 evaluación de algoritmos.
 

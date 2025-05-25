@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  25 MAY 2025 00:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  25 MAY 2025 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -656,7 +656,9 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@ulht=\dimen278
 ) (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+)) (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/latex/was\icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
+) (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count337
 \lst@gtempboxa=\box67
 \lst@token=\toks50
@@ -750,7 +752,7 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 ) (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang2.sty
 File: lstlang2.sty 2024/09/23 1.10c listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 65.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 66.
  (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -767,26 +769,26 @@ LaTeX Info: Redefining \% on input line 13.
  (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Dedication.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Thanks.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Abstract.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\FrontMatter/Contents.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Introduction.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Background.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Methods.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter/Results.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Conclusions.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Recomendations.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Bibliography.aux) (d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\BackMatter/Glossary.aux))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
 
 babelbib: Set bibliography fall-back language to spanish
 babelbib: spanish.bdf loaded because language spanish defined.
@@ -816,25 +818,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 65.
+Package hyperref Info: Link coloring ON on input line 66.
 
 babelbib: Add a command to \bibsspanish
 babelbib: Set language for keywords in the bibliography fixed to spanish
 \c@lstlisting=\count365
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
 
 
 pdfTeX warning: pdflatex (file ./Graphics/uhlogo.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <Graphics/uhlogo.pdf, id=6, 577.15625pt x 794.97pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 <use Graphics/uhlogo.pdf>
-Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 69.
+Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 70.
 (pdftex.def)             Requested size: 49.79231pt x 68.5723pt.
 <Graphics/matcom.png, id=7, 963.6pt x 963.6pt>
 File: Graphics/matcom.png Graphic file (type png)
 <use Graphics/matcom.png>
-Package pdftex.def Info: Graphics/matcom.png  used on input line 69.
+Package pdftex.def Info: Graphics/matcom.png  used on input line 70.
 (pdftex.def)             Requested size: 71.13188pt x 71.12001pt.
 
 
@@ -966,6 +968,11 @@ Overfull \hbox (16.91818pt too wide) in paragraph at lines 9--9
  []
 
 
+Overfull \hbox (34.12053pt too wide) in paragraph at lines 12--12
+ \T1/ppl/m/n/10.95 al-go-rit-mo de ener-g�as re-la-ti-vas so-bre los da-tos de \T1/lmtt/m/n/10.95 20231021_190000\T1/ppl/m/n/10.95 . 
+ []
+
+
 
 [8
 
@@ -980,8 +987,8 @@ Overfull \hbox (29.38055pt too wide) in paragraph at lines 21--21
 
 )
 
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
 [9]
 \openout2 = `MainMatter/Introduction.aux'.
 
@@ -1065,8 +1072,8 @@ LaTeX Info: Redefining \. on input line 269.
 LaTeX Info: Redefining \% on input line 269.
 [15])
 
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 [16]
 \openout2 = `MainMatter/Background.aux'.
 
@@ -1111,8 +1118,8 @@ LaTeX Info: Redefining \. on input line 308.
 LaTeX Info: Redefining \% on input line 308.
 [22])
 
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
 [23]
 \openout2 = `MainMatter/Methods.aux'.
 
@@ -1261,8 +1268,8 @@ LaTeX Info: Redefining \. on input line 665.
 LaTeX Info: Redefining \% on input line 665.
 [36])
 
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
 [37]
 \openout2 = `MainMatter/Results.aux'.
 
@@ -1305,11 +1312,6 @@ File: Graphics/correlation_matrix.png Graphic file (type png)
 <use Graphics/correlation_matrix.png>
 Package pdftex.def Info: Graphics/correlation_matrix.png  used on input line 87.
 (pdftex.def)             Requested size: 251.9989pt x 216.6535pt.
-
-Overfull \hbox (22.12982pt too wide) in paragraph at lines 95--102
-\T1/ppl/m/n/10.95 ^^PLIN^^Q rea-li-za-do so-bre el con-jun-to de gra-ba-cio-nes de la se-si�n \T1/lmtt/m/n/10.95 20231021_190000\T1/ppl/m/n/10.95 .
- []
-
 <Graphics/confusion_matrix_clustering_energies.png, id=465, 812.3148pt x 333.8874pt>
 File: Graphics/confusion_matrix_clustering_energies.png Graphic file (type png)
 <use Graphics/confusion_matrix_clustering_energies.png>
@@ -1438,11 +1440,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 306.
 
-<Graphics/matrix_jij.jpg, id=514, 766.865pt x 684.5575pt>
-File: Graphics/matrix_jij.jpg Graphic file (type jpg)
-<use Graphics/matrix_jij.jpg>
-Package pdftex.def Info: Graphics/matrix_jij.jpg  used on input line 332.
-(pdftex.def)             Requested size: 251.9989pt x 224.94368pt.
+<Graphics/matrix_jij.png, id=514, 559.3698pt x 494.3268pt>
+File: Graphics/matrix_jij.png Graphic file (type png)
+<use Graphics/matrix_jij.png>
+Package pdftex.def Info: Graphics/matrix_jij.png  used on input line 332.
+(pdftex.def)             Requested size: 251.9989pt x 222.69391pt.
 <Graphics/corr_graph.png, id=516, 430.7292pt x 350.2686pt>
 File: Graphics/corr_graph.png Graphic file (type png)
 <use Graphics/corr_graph.png>
@@ -1453,11 +1455,11 @@ Package pdftex.def Info: Graphics/corr_graph.png  used on input line 351.
 LaTeX Info: Redefining \. on input line 354.
 LaTeX Info: Redefining \% on input line 354.
 [46]
-<Graphics/3_matrixs.jpg, id=522, 963.6pt x 401.24907pt>
+<Graphics/3_matrixs.jpg, id=522, 955.8912pt x 401.8212pt>
 File: Graphics/3_matrixs.jpg Graphic file (type jpg)
 <use Graphics/3_matrixs.jpg>
 Package pdftex.def Info: Graphics/3_matrixs.jpg  used on input line 370.
-(pdftex.def)             Requested size: 360.0pt x 149.90474pt.
+(pdftex.def)             Requested size: 360.0pt x 151.33249pt.
 <Graphics/3_graphs.jpg, id=524, 963.6pt x 360.59718pt>
 File: Graphics/3_graphs.jpg Graphic file (type jpg)
 <use Graphics/3_graphs.jpg>
@@ -1465,14 +1467,14 @@ Package pdftex.def Info: Graphics/3_graphs.jpg  used on input line 386.
 (pdftex.def)             Requested size: 360.0pt x 134.71739pt.
 
 
-LaTeX Info: Redefining \. on input line 395.
-LaTeX Info: Redefining \% on input line 395.
+LaTeX Info: Redefining \. on input line 398.
+LaTeX Info: Redefining \% on input line 398.
 [47
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.395 
-       <./Graphics/matrix_jij.jpg>]
+l.398 \section
+              {Análisis de idoneidad del modelo de Ising} <./Graphics/matrix_jij.png>]
 
 LaTeX Info: Redefining \. on input line 407.
 LaTeX Info: Redefining \% on input line 407.
@@ -1487,7 +1489,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.10}) 
                                                   \__shipout_drop_firstpage_...
 l.407 
        <./Graphics/corr_graph.png> <./Graphics/3_matrixs.jpg>]
-<Graphics/isingvsindependent.png, id=536, 802.197pt x 400.8576pt>
+<Graphics/isingvsindependent.png, id=537, 802.197pt x 400.8576pt>
 File: Graphics/isingvsindependent.png Graphic file (type png)
 <use Graphics/isingvsindependent.png>
 Package pdftex.def Info: Graphics/isingvsindependent.png  used on input line 418.
@@ -1503,27 +1505,32 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.11}) 
 l.440 
        <./Graphics/3_graphs.jpg>])
 
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
 [50
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.82 \include{MainMatter/Results}
+l.83 \include{MainMatter/Results}
                                   <./Graphics/isingvsindependent.png>]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (BackMatter/Conclusions.tex)
+ (BackMatter/Conclusions.tex
+Overfull \hbox (13.74457pt too wide) in paragraph at lines 22--31
+\T1/ppl/m/n/10.95 das en-tre eje-cu-cio-nes in-de-pen-dien-tes. El m�-to-do ba-sa-do en \T1/ppl/m/it/10.95 clus-te-ring \T1/ppl/m/n/10.95 espectro-
+ []
+
+
 
 [51
 
 
 
 
-]
+])
 
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
 [52]
 \openout2 = `BackMatter/Recomendations.aux'.
 
@@ -1566,8 +1573,8 @@ LaTeX Info: Redefining \. on input line 288.
 LaTeX Info: Redefining \% on input line 288.
 [58]))
 
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
 [59]
 \openout2 = `BackMatter/Glossary.aux'.
 
@@ -1587,17 +1594,17 @@ Package rerunfilecheck Info: File `Thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: 2693F2A8A79795241B02A649424C8EF5;3697.
  ) 
 Here is how much of TeX's memory you used:
- 28201 strings out of 473522
- 526203 string characters out of 5713158
- 1051997 words of memory out of 5000000
- 50580 multiletter control sequences out of 15000+600000
+ 28224 strings out of 473522
+ 526841 string characters out of 5713158
+ 1052138 words of memory out of 5000000
+ 50599 multiletter control sequences out of 15000+600000
  635624 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,107p,928b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbi.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (59 pages, 2585968 bytes).
+Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (59 pages, 2754395 bytes).
 PDF statistics:
- 877 PDF objects out of 1000 (max. 8388607)
+ 878 PDF objects out of 1000 (max. 8388607)
  193 named destinations out of 1000 (max. 500000)
  425 words of extra memory for PDF output out of 10000 (max. 10000000)
 

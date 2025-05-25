@@ -25,22 +25,23 @@ metodológicas para futuros estudios.
 \begin{enabstract}
 The computational analysis of animal choruses poses a significant 
 challenge in ecoacoustics, particularly in environments with 
-signal overlap and noise. This study developed an automated pipeline 
-to process recordings of \emph{Eleutherodactylus eileenae}, a frog 
-endemic to Cuba whose males form nocturnal choruses to attract females. 
-First, spectral filtering based on amplitude percentiles was applied 
-to attenuate both broadband and transient interference. Then, nine audio 
-tracks were synchronized via cross-correlation. Two heuristic algorithms 
-were implemented to detect and assign calls to microphones: one based 
-on hypotheses of relative energy in the recordings and another using 
-spectro-temporal clustering, the latter demonstrating higher accuracy 
-under low activity conditions. The resulting time series were modeled 
-as a spin network using the Ising model, with interaction parameters 
-\(J_{ij}\) inferred via maximum likelihood. Although significant 
-couplings were identified, an independent model outperformed the 
-Ising model in predicting call patterns, suggesting either weak 
-interactions or limitations in the standard model formulation. This 
-work demonstrates that reproducible heuristic approaches can reconstruct 
-collective dynamics in animal choruses and proposes methodological 
-improvements for future studies.
+signal overlap and noise. In this study, we built an automated 
+pipeline to process recordings of \emph{Eleutherodactylus 
+eileenae}, a Cuban endemic frog whose males form nocturnal 
+choruses to attract females. We first applied percentile-based 
+spectral filtering to attenuate broadband and transient 
+interference, and then synchronized the nine audio tracks with 
+cross-correlation. We designed two heuristic algorithms to 
+detect and assign calls to microphones: one relied on 
+relative-energy hypotheses, while the other used spectro-temporal 
+clustering; the latter achieved higher accuracy under low vocal 
+activity. We modeled the resulting time series as a spin network 
+with the Ising framework and inferred the interaction parameters 
+\(J_{ij}\) through maximum likelihood. Although the Ising model 
+revealed significant couplings, an independent model better 
+predicted call patterns, indicating either weak interactions or 
+limitations in the standard formulation. Overall, our 
+reproducible heuristic workflow reconstructs collective 
+dynamics in animal choruses and points to methodological 
+refinements for future research.
 \end{enabstract}

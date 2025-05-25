@@ -85,7 +85,7 @@ reproducibles.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.7\linewidth]{Graphics/correlation_matrix.png}
-    \caption{Matriz de correlación entre ejecuciones independientes del algoritmo sobre los datos de \texttt{20231021\_190000}. Los bloques diagonales de alta correlación (marcados en rojo) muestran la consistencia de las detecciones para cada micrófono.}
+    \caption{Matriz de correlación entre ejecuciones independientes del algoritmo de energías relativas sobre los datos de \texttt{20231021\_190000}. Los bloques diagonales de alta correlación (marcados en rojo) muestran la consistencia de las detecciones para cada micrófono.}
     \label{fig:correlation}
 \end{figure}
 
@@ -95,7 +95,7 @@ reproducibles.
 Para evaluar de forma cualitativa el desempeño de ambos 
 algoritmos, se compararon sus detecciones con un etiquetado 
 manual de cantos “CO” y “LIN” realizado sobre el conjunto de 
-grabaciones de la sesión \texttt{20231021\_190000}. Dado que el 
+grabaciones específicas de la sesión \texttt{20231021\_190000}. Dado que el 
 etiquetado fue efectuado por personal no experto, esta comparación 
 se abordó de manera visual y comparativa, sin aspirar a la 
 rigurosidad de un protocolo validado por especialistas.  
@@ -237,7 +237,7 @@ prácticamente total.
         \texttt{20231021\_190000b} & 1.00 \\
         \texttt{20231021\_190000c} & 1.00 \\
         \texttt{20231021\_190000d} & 1.00 \\
-        \texttt{20231021\_190000e} & 0.999 \\
+        \texttt{20231021\_190000e} & 0.99 \\
         \texttt{20231021\_190000f} & 1.00 \\
         \texttt{20231021\_190000g} & 1.00 \\
         \texttt{20231021\_190000h} & 1.00 \\
@@ -284,8 +284,8 @@ Estas cifras indican que el Algoritmo B (\textit{clustering})
 identificó un mayor número de cantos no captados por el 
 Algoritmo A, mientras que ambos detectaron conjuntamente la 
 mayoría de eventos (3038). En particular, el Algoritmo A pasó 
-por alto una parte significativa de cantos (2429 únicos de B 
-frente a 3000 únicos de A), lo que refuerza la hipótesis de 
+por alto una parte significativa de cantos (2429 únicos de A 
+frente a 3000 únicos de B), lo que refuerza la hipótesis de 
 que su estrategia de 
 energías relativas resulta menos sensible cuando no todos los 
 individuos emiten simultáneamente. Por el contrario, el 
@@ -329,7 +329,7 @@ inhibición recíproca.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.7\linewidth]{Graphics/matrix_jij.jpg}
+    \includegraphics[width=0.7\linewidth]{Graphics/matrix_jij.png}
     \caption{Matriz de interacciones \( J_{ij} \) inferida para el \texttt{20231021\_190000}.}
     \label{fig:jij}
 \end{figure}
