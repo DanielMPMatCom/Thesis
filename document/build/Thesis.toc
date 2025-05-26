@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {0.3}Hipótesis}{14}{section.0.3}%
 \contentsline {section}{\numberline {0.4}Objetivos}{14}{section.0.4}%
 \contentsline {section}{\numberline {0.5}Propuesta de solución}{15}{section.0.5}%
-\contentsline {section}{\numberline {0.6}Estructura del Documento}{15}{section.0.6}%
+\contentsline {section}{\numberline {0.6}Estructura del Documento}{16}{section.0.6}%
 \contentsline {chapter}{\numberline {1}Antecedentes}{17}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Detección de individuos en grabaciones}{18}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Métodos clásicos de clasificación de señales acústicas}{18}{subsection.1.1.1}%
@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {1.3}Modelos de interacción y causalidad}{21}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Modelos estadísticos de redes}{21}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Técnicas de inferencia de causalidad}{22}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Antecedentes específicos en \emph {E.\,eileenae}}{22}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Antecedentes bioacústicos sobre \emph {E.\,eileenae}}{22}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Métodos}{24}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Representación de audios con Mel-espectrogramas}{26}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Filtrado de ruido de fondo}{27}{section.2.2}%

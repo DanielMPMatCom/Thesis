@@ -8,7 +8,7 @@
 \qquad 
 
 
-Las técnicas de monitorización acústica automatizada se han 
+Las técnicas de monitoreo acústico automatizado se han 
 convertido en una herramienta esencial para el estudio de 
 comunidades de animales en su medio natural. En particular, el 
 análisis del canto de los anuros ofrece información valiosa 
@@ -21,30 +21,31 @@ patrones de interacción pueden reflejar aspectos tanto
 ecológicos como de comportamiento social \cite{alonso2001patrones}.
 
 
-\emph{E. eileenae}, conocido comúnmente como “Colín”, es una especie perteneciente 
+La \emph{E. eileenae}, conocido comúnmente como “Colín” (en alusión onomatopéyica a su llamada de anuncio), 
+es una especie perteneciente 
 a la familia \emph{Eleutherodactylidae}. Su distribución abarca desde la península 
 de Guanahacabibes, en Pinar del Río, hasta la Sierra de Najasa, en Camagüey, ocupando 
 diversos hábitats como bosques semideciduos, pinares y cafetales, hasta altitudes de 
 aproximadamente 900 metros sobre el nivel del mar \cite{alonso2001patrones,schwartz1958new,estrada1994herpetofauna}. Durante 
 el día, estos anuros se refugian en oquedades de rocas, troncos, hojarasca y 
 bromelias; al anochecer, los machos ascienden a ramas y hojas, hasta alturas de 3 
-metros, para emitir sus vocalizaciones.
+metros, para emitir sus vocalizaciones. \cite{alonso2001patrones}
 
-El canto característico de \emph{E.\,eileenae} consta de dos notas diferenciadas: 
+El canto característico o llamada de anuncio típica de \emph{E.\,eileenae} consta de dos notas diferenciadas: 
 una primera “Co”, breve y de frecuencia menor, seguida de una segunda “Lin”, más 
 prolongada y de frecuencia ligeramente superior. Esta estructura ha motivado el uso 
 del término “Colín” para referirse tanto a cada canto individual como, 
 coloquialmente, a la especie misma. Estas llamadas desempeñan un papel crucial en la 
 comunicación intraespecífica, mediando aspectos relacionados con el estado 
-fisiológico y la competencia territorial \cite{alonso2001patrones}. Además, se ha observado que los machos 
-forman agrupaciones o “coros”, sincronizando sus cantos para aumentar la eficacia en 
+fisiológico y la competencia territorial \cite{alonso2001llamadas}. Además, se ha observado que los machos 
+forman agrupaciones o “coros”, sincronizando sus cantos probablemente para aumentar la eficacia en 
 la atracción de hembras y reducir el riesgo de depredación.
 
-La presente investigación desarrolla un flujo computacional automatizado para 
-procesar grabaciones de los cantos de los Colines y, a partir de él, comenzar a analizar 
- las interacciones acústicas asociadas a estos coros. 
-El objetivo es comprender las 
-estrategias de comunicación que emplea \emph{E.\,eileenae} en su entorno natural.
+La presente investigación desarrolla un flujo computacional 
+automatizado para procesar grabaciones de los llamadas de 
+machos adultos de \textit{E. eileenae} con el objetivo de 
+analizar cómo son las interacciones acústicas intraespecíficas 
+durante la actividad vocal en coros.
 En la Figura \ref{fig:colin} se muestra un ejemplar de esta especie, y en la
 Guía sonora de los anfibios de Cuba 
 \footnote{Grabación disponible en: \url{https://www.fonozoo.com/fnz_detalles_registro_amphibia.php?id=97953&tipo_registro=1}}
@@ -53,7 +54,7 @@ se puede encontrar una breve grabación de su canto y otros datos relevantes.\\
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{Graphics/colin.jpg}
-    \caption{Ejemplar de \emph{Eleutherodactylus eileenae}.}
+    \caption{Macho adulto de \emph{Eleutherodactylus eileenae} emitiendo sus llamadas de anuncio.}
     \label{fig:colin}
 \end{figure}
 
@@ -66,7 +67,9 @@ que automatizan la detección de llamadas en ambientes ruidosos
 \cite{acevedo2009automated,blumstein2011acoustic}. Sin embargo, 
 como resultado de la revisión bibliográfica realizada, no se conocen
 estudios en Cuba que   
-hayan integrado estas técnicas con modelos de interacción y causalidad.
+hayan integrado estas técnicas con modelos de interacción y causalidad, 
+ni para anfibios, ni para ningún otro grupo faunístico que basa 
+su comunicación en la emisión y recepción de señales acústicas.
 
 El análisis manual de grabaciones de campo resulta lento, 
 costoso y propenso a errores humanos, lo que limita la escala y 
@@ -78,17 +81,18 @@ trófica de los machos en la Sierra del Rosario \cite{alonso2001patrones}.
 Sin embargo, no se abordó la sincronización automática de 
 múltiples micrófonos ni la clasificación sistemática de cada 
 llamado, pasos indispensables para escalar el análisis a largas 
-series temporales y diferentes localidades.
+series temporales.
 
 Además, los coros de machos implican interacciones acústicas 
 cuya dinámica no se comprende completamente: ¿cómo influyen la 
-densidad de individuos, la configuración espacial de los 
+densidad de individuos, la distribución espacial de los 
 micrófonos y el ruido ambiental en la estructura del coro? 
 ¿Qué reglas simples de interacción subyacen en la sincronización 
-de los “Colines”? En este contexto, un enfoque computacional reproducible
+de las llamadas de los machos cantores en un coro de \emph{Eleutherodactylus eileenae}? 
+En este contexto, un enfoque computacional reproducible
 y basado en algoritmos heurísticos permitiría procesar de 
 manera eficiente decenas de horas de grabaciones, discriminando 
-eventos de interés (cantos de Colines) de otros sonidos 
+eventos de interés (vocalizaciones de Colines) de otros sonidos 
 (otra fauna, viento, tráfico) y garantizando resultados 
 comparables entre campañas de muestreo.
 
@@ -102,25 +106,26 @@ modelado de interacciones acústicas.
 \label{sec:formulacion_problema}
 
 El presente trabajo se ocupa del procesamiento automático de un 
-conjunto de grabaciones registradas en la Reserva de 
+conjunto de grabaciones individuales registradas en registradas en un coro de 
+\textit{E. eileenae} en la Reserva de 
 la Biosfera “Sierra del Rosario” con el objetivo de 
 caracterizar los cantos de machos de 
 \emph{Eleutherodactylus eileenae} y reconstruir la dinámica de 
 sus coros. Estas grabaciones, realizadas con nueve micrófonos 
-omnidireccionales dispuestos en un área de aproximadamente 20 m 
-de radio, abarcan ciclos de 58 minutos de registro seguidos de 
+omnidireccionales tipo Audiomoth dispuestos en un área de aproximadamente 20 m 
+de radio \cite{alonso2001patrones}, abarcan ciclos de 58 minutos de registro seguidos de 
 2 minutos de descarga, durante tres noches consecutivas entre 
 las 18:00 y las 06:00 horas. El entorno de captura se ve 
 afectado por ruido de lluvia, viento, tráfico y la superposición 
 de cantos de varios individuos, lo que plantea retos importantes 
 tanto en la sincronización de señales como en la discriminación 
 de los eventos acústicos relevantes frente a emisiones no 
-deseadas. En la Figura \ref{fig:map} se muestra la distribución geográfica de los micrófonos en el área de estudio.
+deseadas. En la Figura \ref{fig:map} se muestra la distribución espacial de los micrófonos en el área de estudio.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{Graphics/mic_map.jpg}
-    \caption{Distribución Geográfica de los Micrófonos.}
+    \caption{Distribución espacial de los micrófonos Audiomoths dentro de un coro de \textit{E. eileenae} en el área de estudio en la Reserva de la Biosfera “Sierra del Rosario”, Artemisa, Cuba.}
     \label{fig:map}
 \end{figure}
 

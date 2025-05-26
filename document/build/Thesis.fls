@@ -498,9 +498,9 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.lof
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.lof
 INPUT .\MainMatter\Introduction.tex
 INPUT .\MainMatter\Introduction.tex
 OUTPUT d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\MainMatter\Introduction.aux

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  25 MAY 2025 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  25 MAY 2025 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -916,6 +916,21 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 
 ])
+Overfull \hbox (6.2833pt too wide) in paragraph at lines 26--74
+\T1/ppl/m/n/10.95 plied percentile-based spec-tral fil-te-ring to at-te-nua-te broad-band and transient
+ []
+
+
+Overfull \hbox (22.88458pt too wide) in paragraph at lines 26--74
+\T1/ppl/m/n/10.95 in-ter-fe-ren-ce, and then syn-chro-ni-zed the ni-ne au-dio tracks with cross-correlation.
+ []
+
+
+Overfull \hbox (17.05121pt too wide) in paragraph at lines 26--74
+\T1/ppl/m/n/10.95 ma-xi-mum li-ke-lihood. Although the Ising mo-del re-vea-led sig-ni-fi-cant couplings,
+ []
+
+
 
 [5
 
@@ -994,30 +1009,30 @@ LaTeX Info: Redefining \% on input line 75.
 
  (MainMatter/Introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 50.
+(Font)              scaled to size 9.37807pt on input line 51.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 50.
+(Font)              scaled to size 7.29405pt on input line 51.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 50.
+(Font)              scaled to size 5.21004pt on input line 51.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 50.
+(Font)              scaled to size 9.37807pt on input line 51.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 50.
+(Font)              scaled to size 7.29405pt on input line 51.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 50.
+(Font)              scaled to size 5.21004pt on input line 51.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 [][][]\T1/ppl/m/n/9 Grabaci�n dis-po-ni-ble en: [][]$\T1/lmtt/m/n/9 https : / / www . fonozoo . com / fnz _ detalles _ registro _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--52
+Underfull \hbox (badness 10000) in paragraph at lines 44--53
 
  []
 
@@ -1029,47 +1044,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--52
 
 
 ]
-<Graphics/colin.jpg, id=193, 338.76563pt x 226.59656pt>
+<Graphics/colin.jpg, id=195, 338.76563pt x 226.59656pt>
 File: Graphics/colin.jpg Graphic file (type jpg)
 <use Graphics/colin.jpg>
-Package pdftex.def Info: Graphics/colin.jpg  used on input line 55.
+Package pdftex.def Info: Graphics/colin.jpg  used on input line 56.
 (pdftex.def)             Requested size: 360.0pt x 240.8101pt.
 
 
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
 [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.82 
+l.73 
       <./Graphics/colin.jpg>]
-<Graphics/mic_map.jpg, id=206, 1284.8pt x 722.7pt>
+
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
+[12]
+<Graphics/mic_map.jpg, id=213, 1284.8pt x 722.7pt>
 File: Graphics/mic_map.jpg Graphic file (type jpg)
 <use Graphics/mic_map.jpg>
-Package pdftex.def Info: Graphics/mic_map.jpg  used on input line 122.
+Package pdftex.def Info: Graphics/mic_map.jpg  used on input line 127.
 (pdftex.def)             Requested size: 360.0pt x 202.49797pt.
 
 
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
-[12]
-
-LaTeX Info: Redefining \. on input line 160.
-LaTeX Info: Redefining \% on input line 160.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.160 
+l.165 
        <./Graphics/mic_map.jpg>]
 
-LaTeX Info: Redefining \. on input line 206.
-LaTeX Info: Redefining \% on input line 206.
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
 [14]
 
-LaTeX Info: Redefining \. on input line 269.
-LaTeX Info: Redefining \% on input line 269.
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
 [15])
 
 LaTeX Info: Redefining \. on input line 80.
@@ -1148,7 +1163,7 @@ Overfull \hbox (4.49043pt too wide) in paragraph at lines 86--86
 LaTeX Info: Redefining \. on input line 129.
 LaTeX Info: Redefining \% on input line 129.
 [26]
-<Graphics/mel-spectrogram.png, id=366, 574.5465pt x 349.7868pt>
+<Graphics/mel-spectrogram.png, id=374, 574.5465pt x 349.7868pt>
 File: Graphics/mel-spectrogram.png Graphic file (type png)
 <use Graphics/mel-spectrogram.png>
 Package pdftex.def Info: Graphics/mel-spectrogram.png  used on input line 132.
@@ -1163,7 +1178,7 @@ Underfull \hbox (badness 1028) in paragraph at lines 133--133
 \T1/lmtt/m/n/10.95 20231021_190000h\T1/ppl/m/n/10.95 , don-de se ob-ser-van las no-tas ^^PCO^^Q (ba-ja fre-cuen-
  []
 
-<Graphics/car_noise_before.png, id=368, 575.2692pt x 347.6187pt>
+<Graphics/car_noise_before.png, id=376, 575.2692pt x 347.6187pt>
 File: Graphics/car_noise_before.png Graphic file (type png)
 <use Graphics/car_noise_before.png>
 Package pdftex.def Info: Graphics/car_noise_before.png  used on input line 161.
@@ -1178,7 +1193,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) h
                                                   \__shipout_drop_firstpage_...
 l.179 
        <./Graphics/mel-spectrogram.png>]
-<Graphics/car_noise_after.png, id=376, 575.2692pt x 347.6187pt>
+<Graphics/car_noise_after.png, id=384, 575.2692pt x 347.6187pt>
 File: Graphics/car_noise_after.png Graphic file (type png)
 <use Graphics/car_noise_after.png>
 Package pdftex.def Info: Graphics/car_noise_after.png  used on input line 182.
@@ -1280,7 +1295,7 @@ Overfull \hbox (8.37814pt too wide) in paragraph at lines 25--25
 []\T1/ppl/b/n/14.4 Resultados y eva-lua-ci�n de los al-go-rit-mos pro-pues-
  []
 
-<Graphics/sequence.png, id=452, 742.2129pt x 680.0607pt>
+<Graphics/sequence.png, id=460, 742.2129pt x 680.0607pt>
 File: Graphics/sequence.png Graphic file (type png)
 <use Graphics/sequence.png>
 Package pdftex.def Info: Graphics/sequence.png  used on input line 42.
@@ -1307,12 +1322,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) h
                                                   \__shipout_drop_firstpage_...
 l.67 
       <./Graphics/sequence.png>]
-<Graphics/correlation_matrix.png, id=463, 711.1368pt x 611.4042pt>
+<Graphics/correlation_matrix.png, id=471, 711.1368pt x 611.4042pt>
 File: Graphics/correlation_matrix.png Graphic file (type png)
 <use Graphics/correlation_matrix.png>
 Package pdftex.def Info: Graphics/correlation_matrix.png  used on input line 87.
 (pdftex.def)             Requested size: 251.9989pt x 216.6535pt.
-<Graphics/confusion_matrix_clustering_energies.png, id=465, 812.3148pt x 333.8874pt>
+<Graphics/confusion_matrix_clustering_energies.png, id=473, 812.3148pt x 333.8874pt>
 File: Graphics/confusion_matrix_clustering_energies.png Graphic file (type png)
 <use Graphics/confusion_matrix_clustering_energies.png>
 Package pdftex.def Info: Graphics/confusion_matrix_clustering_energies.png  used on input line 123.
@@ -1327,17 +1342,17 @@ Overfull \hbox (19.3055pt too wide) has occurred while \output is active
  []
 
 [40]
-<Graphics/boxplot_and_violin.png, id=472, 858.5676pt x 425.6703pt>
+<Graphics/boxplot_and_violin.png, id=480, 858.5676pt x 425.6703pt>
 File: Graphics/boxplot_and_violin.png Graphic file (type png)
 <use Graphics/boxplot_and_violin.png>
 Package pdftex.def Info: Graphics/boxplot_and_violin.png  used on input line 155.
 (pdftex.def)             Requested size: 360.0pt x 178.48152pt.
-<Graphics/histogram_energies_tags.png, id=473, 714.7503pt x 354.123pt>
+<Graphics/histogram_energies_tags.png, id=481, 714.7503pt x 354.123pt>
 File: Graphics/histogram_energies_tags.png Graphic file (type png)
 <use Graphics/histogram_energies_tags.png>
 Package pdftex.def Info: Graphics/histogram_energies_tags.png  used on input line 162.
 (pdftex.def)             Requested size: 172.79846pt x 85.61264pt.
-<Graphics/histogram_clustering_tags.png, id=474, 714.7503pt x 354.123pt>
+<Graphics/histogram_clustering_tags.png, id=482, 714.7503pt x 354.123pt>
 File: Graphics/histogram_clustering_tags.png Graphic file (type png)
 <use Graphics/histogram_clustering_tags.png>
 Package pdftex.def Info: Graphics/histogram_clustering_tags.png  used on input line 163.
@@ -1376,7 +1391,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) h
                                                   \__shipout_drop_firstpage_...
 l.175 
        <./Graphics/confusion_matrix_clustering_energies.png> <./Graphics/boxplot_and_violin.png>]
-<Graphics/times_comparison.png, id=489, 426.393pt x 426.393pt>
+<Graphics/times_comparison.png, id=497, 426.393pt x 426.393pt>
 File: Graphics/times_comparison.png Graphic file (type png)
 <use Graphics/times_comparison.png>
 Package pdftex.def Info: Graphics/times_comparison.png  used on input line 199.
@@ -1395,7 +1410,7 @@ Overfull \hbox (0.60765pt too wide) in paragraph at lines 260--265
 []\T1/ppl/m/n/10.95 Adicionalmente, se ana-li-za-ron las dis-cre-pan-cias en la de-tec-ci�n de even-
  []
 
-<Graphics/histogram_energies_clustering.png, id=501, 714.7503pt x 354.123pt>
+<Graphics/histogram_energies_clustering.png, id=509, 714.7503pt x 354.123pt>
 File: Graphics/histogram_energies_clustering.png Graphic file (type png)
 <use Graphics/histogram_energies_clustering.png>
 Package pdftex.def Info: Graphics/histogram_energies_clustering.png  used on input line 268.
@@ -1440,12 +1455,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 306.
 
-<Graphics/matrix_jij.png, id=514, 559.3698pt x 494.3268pt>
+<Graphics/matrix_jij.png, id=522, 559.3698pt x 494.3268pt>
 File: Graphics/matrix_jij.png Graphic file (type png)
 <use Graphics/matrix_jij.png>
 Package pdftex.def Info: Graphics/matrix_jij.png  used on input line 332.
 (pdftex.def)             Requested size: 251.9989pt x 222.69391pt.
-<Graphics/corr_graph.png, id=516, 430.7292pt x 350.2686pt>
+<Graphics/corr_graph.png, id=524, 430.7292pt x 350.2686pt>
 File: Graphics/corr_graph.png Graphic file (type png)
 <use Graphics/corr_graph.png>
 Package pdftex.def Info: Graphics/corr_graph.png  used on input line 351.
@@ -1455,12 +1470,12 @@ Package pdftex.def Info: Graphics/corr_graph.png  used on input line 351.
 LaTeX Info: Redefining \. on input line 354.
 LaTeX Info: Redefining \% on input line 354.
 [46]
-<Graphics/3_matrixs.jpg, id=522, 955.8912pt x 401.8212pt>
+<Graphics/3_matrixs.jpg, id=530, 955.8912pt x 401.8212pt>
 File: Graphics/3_matrixs.jpg Graphic file (type jpg)
 <use Graphics/3_matrixs.jpg>
 Package pdftex.def Info: Graphics/3_matrixs.jpg  used on input line 370.
 (pdftex.def)             Requested size: 360.0pt x 151.33249pt.
-<Graphics/3_graphs.jpg, id=524, 963.6pt x 360.59718pt>
+<Graphics/3_graphs.jpg, id=532, 963.6pt x 360.59718pt>
 File: Graphics/3_graphs.jpg Graphic file (type jpg)
 <use Graphics/3_graphs.jpg>
 Package pdftex.def Info: Graphics/3_graphs.jpg  used on input line 386.
@@ -1489,7 +1504,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.10}) 
                                                   \__shipout_drop_firstpage_...
 l.407 
        <./Graphics/corr_graph.png> <./Graphics/3_matrixs.jpg>]
-<Graphics/isingvsindependent.png, id=537, 802.197pt x 400.8576pt>
+<Graphics/isingvsindependent.png, id=545, 802.197pt x 400.8576pt>
 File: Graphics/isingvsindependent.png Graphic file (type png)
 <use Graphics/isingvsindependent.png>
 Package pdftex.def Info: Graphics/isingvsindependent.png  used on input line 418.
@@ -1557,20 +1572,20 @@ LaTeX Info: Redefining \% on input line 88.
 
 ]
 
-LaTeX Info: Redefining \. on input line 112.
-LaTeX Info: Redefining \% on input line 112.
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
 [55]
 
-LaTeX Info: Redefining \. on input line 177.
-LaTeX Info: Redefining \% on input line 177.
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
 [56]
 
 LaTeX Info: Redefining \. on input line 230.
 LaTeX Info: Redefining \% on input line 230.
 [57]
 
-LaTeX Info: Redefining \. on input line 288.
-LaTeX Info: Redefining \% on input line 288.
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
 [58]))
 
 LaTeX Info: Redefining \. on input line 90.
@@ -1591,20 +1606,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 2693F2A8A79795241B02A649424C8EF5;3697.
+(rerunfilecheck)             Checksum: B181E6ACFDB789843EAC68D7940ACA5A;3896.
  ) 
 Here is how much of TeX's memory you used:
- 28224 strings out of 473522
- 526841 string characters out of 5713158
- 1052138 words of memory out of 5000000
- 50599 multiletter control sequences out of 15000+600000
+ 28248 strings out of 473522
+ 527318 string characters out of 5713158
+ 1051138 words of memory out of 5000000
+ 50620 multiletter control sequences out of 15000+600000
  635624 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,107p,928b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbi.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (59 pages, 2754603 bytes).
+Output written on "d:\Escuela\CComputación\Cuarto Año\Thesis\document\build\Thesis.pdf" (59 pages, 2758395 bytes).
 PDF statistics:
- 878 PDF objects out of 1000 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 196 named destinations out of 1000 (max. 500000)
  425 words of extra memory for PDF output out of 10000 (max. 10000000)
 

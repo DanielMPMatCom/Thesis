@@ -29,44 +29,46 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: BackMatter/Glossary.aux
 Database file #1: build/Bibliography.bib
-You've used 50 entries,
+Warning--empty journal in dunn1926additional
+You've used 53 entries,
             2118 wiz_defined-function locations,
-            824 strings with 14837 characters,
-and the built_in function-call counts, 18248 in all, are:
-= -- 1764
-> -- 1058
+            837 strings with 15275 characters,
+and the built_in function-call counts, 18951 in all, are:
+= -- 1829
+> -- 1091
 < -- 5
-+ -- 430
-- -- 370
-* -- 1420
-:= -- 3141
-add.period$ -- 151
-call.type$ -- 50
-change.case$ -- 330
++ -- 443
+- -- 380
+* -- 1456
+:= -- 3269
+add.period$ -- 160
+call.type$ -- 53
+change.case$ -- 343
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 567
-empty$ -- 1250
-format.name$ -- 370
-if$ -- 3646
+cite$ -- 54
+duplicate$ -- 599
+empty$ -- 1307
+format.name$ -- 380
+if$ -- 3789
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 46
-newline$ -- 254
-num.names$ -- 100
-pop$ -- 279
+int.to.str$ -- 53
+missing$ -- 50
+newline$ -- 269
+num.names$ -- 106
+pop$ -- 297
 preamble$ -- 1
-purify$ -- 282
+purify$ -- 293
 quote$ -- 0
-skip$ -- 415
+skip$ -- 438
 stack$ -- 0
-substring$ -- 1156
-swap$ -- 89
+substring$ -- 1171
+swap$ -- 91
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 198
-warning$ -- 0
-while$ -- 174
-width$ -- 52
-write$ -- 545
+type$ -- 208
+warning$ -- 1
+while$ -- 180
+width$ -- 55
+write$ -- 575
+(There was 1 warning)
