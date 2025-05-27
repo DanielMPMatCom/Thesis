@@ -460,7 +460,7 @@ parejas correspondientes a los dos componentes del canto
 ventanas temporales aprendidas a partir de histogramas de datos 
 manuales. A las parejas \((t_{\mathrm{CO}},f_{\mathrm{CO}})\) y 
 \((t_{\mathrm{LIN}},f_{\mathrm{LIN}})\) obtenidas se les aplicó 
-un algoritmo aglomerativo de clustering, usando como métrica la 
+un algoritmo aglomerativo de \textit{clustering}, usando como métrica la 
 suma de cuadrados de la diferencia de frecuencias, de modo que 
 aquellas parejas cuyos valores espectrales y temporales se 
 encontraran más cercanos quedaran agrupadas. Cada grupo 
@@ -476,7 +476,7 @@ ilustrados en el pseudocódigo del Algoritmo 2.
   \item Se calculó el Mel-espectrograma de cada archivo.
   \item Se localizaron todos los máximos locales del Mel-espectrograma, cada uno especificado por un par \((t,f)\).
   \item Se filtraron aquellos máximos cuyas frecuencias y tiempos coincidían con los rangos propios de las notas “CO” y “LIN”, según los histogramas derivados de datos reales.
-  \item A las parejas \((t_{\mathrm{CO}},f_{\mathrm{CO}})\) y \((t_{\mathrm{LIN}},f_{\mathrm{LIN}})\) resultantes se les aplicó clustering aglomerativo, con distancia basada en la diferencia al cuadrado de frecuencias.
+  \item A las parejas \((t_{\mathrm{CO}},f_{\mathrm{CO}})\) y \((t_{\mathrm{LIN}},f_{\mathrm{LIN}})\) resultantes se les aplicó \textit{clustering} aglomerativo, con distancia basada en la diferencia al cuadrado de frecuencias.
   \item Se seleccionó la secuencia cuyo grupo presentó la potencia media de canto más alta, asignándola al micrófono correspondiente.
   \item Se descartaron los canales con un número de máximos inferior al umbral mínimo, declarándolos sin detección de Colín.
 \end{enumerate}
