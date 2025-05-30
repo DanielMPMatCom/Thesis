@@ -1,5 +1,7 @@
 # Eleutherodactylus eileenae Chorus Analysis
 
+![colin](document/Graphics/colin.jpg)
+
 ## 📖 Problem Statement  
 Field recordings of the Cuban tree-frog _Eleutherodactylus eileenae_ (“Colines”) capture rich nocturnal chorus behavior, but ambient noise, overlapping calls and multi-mic delays make manual analysis slow and error-prone. No Cuban study to date has combined passive acoustic monitoring with statistical interaction models to quantify how individual frogs coordinate their calling.
 
